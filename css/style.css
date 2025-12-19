@@ -465,15 +465,10 @@ header .signup_btn.btn {
     padding-bottom: 44px;
 }
 .cta_section .learn_more {
-  border-radius: 8px;
-  border: 2px solid var(--Darker-accessible-blue, #4065d3);
-  color: var(--Darker-accessible-blue, #4065d3);
-  font-size: 18px;
-  background: transparent;
-  font-weight: 700;
-  line-height: 1.2;
-  box-shadow: none !important;
-  padding: 16px 17px;
+border: 2px solid var(--Darker-accessible-blue, #4065d3);
+    color: var(--Darker-accessible-blue, #4065d3);
+    background: transparent;
+    padding: 16px 17px;
 }
 .cta_section .explore_plans {
   border-radius: 8px;
@@ -657,6 +652,12 @@ footer .copyright p {
     display: flex;
     align-items: center;
 }
+.protect_drive_section .protect_drive_img img{
+  width: 100%;
+  max-width: 100%;
+}
+
+
 
 
 .how_its_work.coverages_how_its_work_section .work_box {
@@ -664,6 +665,19 @@ footer .copyright p {
 }
 .background.coverages_pages{
     background-color: #FEFEFE;
+}
+.testimonial_section .cta_btn {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+}
+.cta_btn .learn_more {
+    border: 2px solid var(--Darker-accessible-blue, #4065d3);
+    color: var(--Darker-accessible-blue, #4065d3);
+    background: transparent;
+    padding: 16px 17px;
 }
 /* Protect Drive style end  */
 
@@ -799,7 +813,9 @@ footer .copyright p {
     line-height: 1.2;
     margin: 0;
 }
-
+.available_plane_section .available_plane_box img {
+    width: 70px;
+}
 
 /* Available  style end  */
 
@@ -943,6 +959,27 @@ footer .copyright p {
 footer .social_link ul {
     margin-top: 0;
 }
+
+
+.coverage_plans_section .plan_box {
+    margin-bottom: 40px;
+}
+.coverage_plans_section .coverage_plans_btn {
+    margin-top: 40px;
+}
+.toco_make_sense .toco_make_sense_img img {
+    height: 600px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+.protection_form_sec .protection_form_img img {
+    height: 600px;
+    object-fit: cover;
+    margin-top: 40px;
+}
+.protection_form_sec .row_reverse {
+    flex-direction: column-reverse;
+}
 }
 
 @media (max-width: 992px) {
@@ -993,6 +1030,17 @@ footer .social_link ul {
 }
 .cta_section .bird_img {
     text-align: center;
+}
+
+.protect_drive_section {
+    padding: 60px 15px;
+}
+.protect_drive_section .protect_drive_img img {
+    width: auto;
+}
+.protect_drive_section .protect_drive_img {
+    text-align: center;
+    margin-top: 40px;
 }
 }
 
@@ -1148,7 +1196,64 @@ footer .footer_contact{
             border-top: 1px solid #D9DBE9;
             width: 100%;
 }
+
+
+
+
+
+
+.coverage_banner {
+    padding: 40px 10px;
 }
+    .protect_drive_section {
+        padding: 40px 8px;
+    }
+    .protect_drive_section .protect_drive_content ul li span {
+    font-size: 16.847px;
+}
+.protect_drive_section .protect_drive_content p {
+    margin: 20px 0px;
+}
+
+.coverage_plans_section {
+    padding: 40px 6px;
+}
+    .coverage_plans_section .coverage_plans_btn {
+        margin-top: 20px;
+    }
+    .coverage_plans_section .coverage_plans_content p {
+    font-size: 18px;
+}
+.coverage_plans_section .plan_details h3 {
+    font-size: 22px;
+}
+.available_plane_section {
+    padding: 40px 8px;
+}
+.toco_make_sense {
+    padding: 40px 8px;
+}
+.toco_make_sense .toco_make_sense_content .list_content span {
+    font-size: 18px;
+}
+.toco_make_sense .img img {
+    width: 40px;
+}
+.toco_make_sense .toco_make_sense_content p {
+    margin-bottom: 30px;
+}
+.toco_make_sense .toco_make_sense_img img {
+        height: 400px;
+        margin-top: 50px;
+    }
+    .protection_form_sec {
+    padding: 40px 8px;
+}
+.protection_form_sec .protection_form_img img {
+        height: 400px;
+    }
+}
+
 @media (max-width: 420px) {
   .testimonial_section .logo img {
     height: 55.244px;
