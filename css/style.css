@@ -271,6 +271,7 @@ header .signup_btn.btn {
 .discover_benefits {
   padding: 80px 15px;
   border-bottom: 1px solid #b9c8f2;
+  overflow: hidden;
 }
 .discover_benefits .benefits_img img {
   border-radius: 18.041px;
