@@ -610,7 +610,11 @@ footer .footer_contact h4 {
 footer .contact_box {
   margin-bottom: 10px;
 }
-
+footer .toco_logo {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
 footer .contact_box a h2 {
   color: var(--white);
   font-size: var(--fs-body);
@@ -1806,6 +1810,9 @@ span.swiper-pagination-bullet {
     padding-top: 28px;
     border-top: 1px solid #d9dbe9;
     width: 100%;
+  }
+  footer .toco_logo .footer_bbb {
+    display: none;
   }
 
   .coverage_banner {
