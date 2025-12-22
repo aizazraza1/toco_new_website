@@ -444,6 +444,9 @@ header .signup_btn.btn {
   line-height: 1.2;
   margin: 0px;
 }
+.how_its_work .btn_how.text-center {
+    margin-top: 70px;
+}
 
 /* =========================================
    TESTIMONIAL
@@ -1729,6 +1732,9 @@ span.swiper-pagination-bullet {
     padding: 12px 24px 20px;
     margin-bottom: 24px;
   }
+  .how_its_work .btn_how.text-center {
+    margin-top: 30px;
+}
 
   .testimonial_section .reviews_logo {
     display: grid !important;
