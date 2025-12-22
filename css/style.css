@@ -127,8 +127,12 @@ ul {
 
 /* header style start  */
 header {
-  background: #4065d3;
-  padding: 12px 15px;
+    background: #4065d3;
+    padding: 12px 15px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 11111;
 }
 header .nav-link {
   color: #fefefe;
@@ -588,9 +592,6 @@ footer .copyright p {
 /* coverage banner style start   */
 .coverage_banner {
     padding: 55px 15px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .coverage_banner .coverage_banner_content h3 {
     color: var(--Light-Gray, #F2F2F2);
@@ -1139,6 +1140,220 @@ background: linear-gradient(271deg, rgba(0, 0, 0, 0.00) -0.02%, rgba(0, 0, 0, 0.
 }
 /* Marine Banner Style end  */
 
+
+            /* ABout Page Style Start  */
+
+/* About us Banner Style Start  */
+.about_us_banner {
+    padding: 55px 15px;
+}
+.about_us_banner .coverage_banner_content p {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+
+}
+.about_us_banner .coverage_banner_content h1 {
+    margin: 71px 0px;
+}
+/* About us Banner Style End  */
+
+/* About Get to know section start  */
+.get_to_know_section {
+    padding: 80px 15px;
+    background: var(--White, #FEFEFE);
+    border-bottom: 1px solid #b9c8f2;
+}
+.get_to_know_section .get_to_know_content h2 {
+    color: var(--Black, #140505);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.get_to_know_section .get_to_know_img img {
+    border-radius: 18.041px;
+    width: 100%;
+    max-width: 100%;
+}
+.get_to_know_section .get_to_know_content p {
+    color: var(--Black, #140505);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0;
+}
+/* About Get to know section end  */
+
+/* what make toco diffrent style start  */
+.what_make_toco_different {
+    padding: 80px 15px;
+    background: var(--White, #FEFEFE);
+}
+.what_make_toco_different .what_make_toco_different_content h2 {
+    color: var(--Black-100, #141414);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.what_make_toco_different .what_make_toco_different_content p {
+    color: var(--Black-100, #141414);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+.what_make_toco_different .toco_different_box {
+    border-radius: 10px;
+    background: #F1F5FF;
+    padding: 27px 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    height: 120px;
+}
+.what_make_toco_different  .toco_different_box_icon img {
+    width: 50px;
+}
+.what_make_toco_different .toco_different_box h3 {
+    color: var(--Darker-accessible-blue, #4065D3);
+    font-size: 18px;
+    font-weight: 1.2;
+    font-weight: 500;
+    margin-bottom: 4px;
+    line-height: 26px;
+}
+.what_make_toco_different .toco_different_box p {
+    color: var(--Black, #140505);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+/* what make toco diffrent style end  */
+
+
+
+            /* Review Page Start  */
+
+/* review banner start  */
+.review_banner .reviews_logo {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+/* review banner end  */
+
+/* testimonial block section style start  */
+.testimonial_block_section{
+  padding: 80px 15px;
+  background: var(--White, #FEFEFE);
+}
+.testimonial_block_section .review_box {
+    border-radius: 10.808px;
+    background: var(--Background, #EDF2FF);
+    box-shadow: 0 4px 20px 0 rgba(64, 101, 211, 0.05);
+    padding: 21px 24px 24px;
+    margin-bottom: 32px;
+    height: 315px;
+    display: grid;
+    align-content: space-between;
+}
+.testimonial_block_section .testimonial_section_content h2 {
+    color: var(--Black-100, #141414);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.testimonial_block_section  .testimonial_section_content p {
+    color: var(--Black-100, #141414);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 60px;
+}
+.testimonial_block_section .review_box p {
+    color: var(--Darker-accessible-blue, #4065d3);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 29px 0px 24px;
+}
+.testimonial_block_section .review_box h4 {
+color: var(--Darker-accessible-blue, #4065d3);
+  font-size: 16.012px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+.testimonial_block_section .see_more_btn {
+    margin-top: 32px;
+}
+/* testimonial block section style end  */
+/* testimonial slider style start  */
+.testimonial_slider_section {
+    padding: 80px 15px;
+    background: var(--White, #FEFEFE);
+    border: 1px solid #b9c8f2;
+}
+
+.testimonial_slider_section .review_box {
+    border-radius: 12px;
+    background: var(--Darker-accessible-blue, #4065D3);
+    padding: 49px 89px;
+    width: 1196px;
+    max-width: 100%;
+    margin: auto;
+    height: 312px;
+    display: grid;
+    align-content: space-between;
+}
+.testimonial_slider_section .review_box p {
+    color: var(--White, #FEFEFE);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+.testimonial_slider_section .review_box h4 {
+    color: var(--White, #FEFEFE);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+}
+.testimonial_slider_section .swiper-button-prev:after,.testimonial_slider_section .swiper-button-next:after {
+    content: none;
+}
+.testimonial_slider_section  .arrow_button {
+    color: #4065D3;
+    font-size: 22px;
+}
+.testimonial_slider_section .swiper-button-next.arrow_button {
+    right: 0;
+}
+.testimonial_slider_section .swiper-button-prev.arrow_button {
+    left: 0;
+}
+.testimonial_slider_section .swiper-wrapper {
+    padding-bottom: 70px;
+}
+span.swiper-pagination-bullet {
+    background: #C2C2C2;
+    width: 10px;
+    height: 10px;
+        opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background: #4065D3 !important;
+}
+/* testimonial slider style end  */
+
+
 /* Responsive Style Start  */
 
 @media (max-width: 1200px) {
@@ -1203,6 +1418,33 @@ footer .social_link ul {
 
 .coverage_plans_two .price_box {
     margin-bottom: 40px;
+}
+
+
+.get_to_know_section .get_to_know_img img {
+    height: 600px;
+    object-fit: cover;
+    margin-top: 40px;
+}
+.get_to_know_section .row-reverse {
+    flex-direction: column-reverse;
+}
+
+.testimonial_slider_section .review_box {
+    padding: 49px 40px;
+}
+.testimonial_slider_section .review_box p {
+    font-size: 28px;
+}
+.testimonial_slider_section .arrow_button {
+    color: #ffffff;
+    font-size: 30px;
+}
+.testimonial_slider_section .swiper-button-next.arrow_button {
+    right: 25px;
+}
+.testimonial_slider_section .swiper-button-prev.arrow_button {
+    left: 25px;
 }
 }
 
@@ -1431,6 +1673,7 @@ footer .footer_contact{
 
 .coverage_banner {
     padding: 40px 10px;
+            background-position: 70% 100% !important;
 }
     .protect_drive_section {
         padding: 40px 8px;
@@ -1516,6 +1759,73 @@ footer .footer_contact{
 }
 .marine_banner {
     padding: 80px 8px 100px;
+}
+
+
+
+
+.about_us_banner .coverage_banner_content h1 {
+    margin: 51px 0px;
+}
+.get_to_know_section {
+    padding: 40px 8px;
+}
+.get_to_know_section .get_to_know_content h2 {
+    font-size: 30px;
+}
+.get_to_know_section .get_to_know_img img {
+        height: 400px;
+    }
+
+
+.what_make_toco_different .toco_different_box {
+    height: auto;
+}
+.what_make_toco_different {
+     padding: 40px 8px;
+}
+.what_make_toco_different .what_make_toco_different_content p {
+    font-size: 18px;
+}
+
+
+.review_banner .reviews_logo {
+    flex-wrap: wrap;
+     justify-content: space-around;
+}
+.testimonial_block_section .review_box {
+    height: auto;
+     padding: 12px 21px 21px;
+}
+.testimonial_block_section{
+       padding: 40px 8px;
+}
+.testimonial_block_section .testimonial_section_content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.testimonial_block_section .see_more_btn {
+    margin-top: 20px;
+}
+ .cta_section.review_page_sec .cta_button {
+    display: block !important;
+}
+.cta_section.review_page_sec a.explore_plans.btn {
+    margin: 20px 0px 40px;
+}
+.testimonial_slider_section .review_box p {
+        font-size: 24px;
+    }
+    .testimonial_slider_section .review_box {
+        padding: 30px 20px;
+        height: auto;
+    }
+    .testimonial_slider_section .arrow_button{
+      display: none;
+    }
+    .testimonial_slider_section {
+    padding: 40px 8px;
+    
 }
 }
 
