@@ -1,705 +1,673 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- Style CSS  -->
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!-- font-awesome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <title>Home</title>
-</head>
-
-<body>
-
-    <!-- header section Start  -->
-    <header>
-        <div class="container">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <!-- Style CSS  -->
+      <link rel="stylesheet" href="./css/style.css">
+      <!-- font-awesome cdn  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <title>Home</title>
+   </head>
+   <body>
+      <!-- header section Start  -->
+      <header>
+         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-5">
-                    <nav class="navbar navbar-expand-xl bg-body- p-0">
-                        <a class="navbar-brand" href="/index.html"><img src="./images/toco_main_logo.svg" alt="main_logo"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Our coverage
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./auto.html"> <img src="./images/auto_menu_icon.svg"
-                                                    alt="icon">Auto</a></li>
-                                        <li><a class="dropdown-item" href=""><img src="./images/home_menu_icon.svg"
-                                                    alt="icon"> Home</a></li>
-                                        <li>
-                                        </li>
-                                        <li><a class="dropdown-item" href="./group-plans.html"><img src="./images/plans_menu_icon.svg"
-                                                    alt="icon">Group Plans</a></li>
-                                        <li><a class="dropdown-item" href="./marine.html"><img src="./images/marine_menu_icon.svg"
-                                                    alt="icon">Marine</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        WHY TOCO?
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./about-us.html"> <img src="./images/about_menu_icon.svg"
-                                                    alt="icon">About Us</a></li>
-                                        <li><a class="dropdown-item" href="#"><img src="./images/award_menu_icon.svg"
-                                                    alt="icon"> Awards & Press</a></li>
-                                        <li>
-                                        </li>
-                                        <li><a class="dropdown-item" href="./reviews.html"><img src="./images/review_menu_icon.svg"
-                                                    alt="icon">Reviews</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        FAQ
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        resources
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./contact.html"> <img src="./images/contact_menu_icon.svg"
-                                                    alt="icon">Contact Us</a></li>
-                                        <li><a class="dropdown-item" href="#"><img src="./images/blog_menu_icon.svg"
-                                                    alt="icon"> Blog</a></li>
-                                        <li>
-                                        </li>
-                                        <li><a class="dropdown-item" href="#"><img
-                                                    src="./images/affiliate_menu_icon.svg" alt="icon">Become an
-                                                Affiliate</a></li>
-                                        <li><a class="dropdown-item" href="#"><img src="./images/shop_menu_icon.svg"
-                                                    alt="icon">Claims Center for <br> Auto Repair Shops</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-lg-6 col-md-7">
-                    <div class="header_right d-flex justify-content-end align-items-center">
-                        <a href="#" class="login_btn btn">Customer Login</a>
-                        <a href="#" class="signup_btn btn">Get my quote</a>
-                    </div>
-                </div>
+               <div class="col-lg-6 col-md-5">
+                  <nav class="navbar navbar-expand-xl bg-body- p-0">
+                     <a class="navbar-brand" href="/index.html"><img src="./images/toco_main_logo.svg" alt="main_logo"></a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                           <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                 aria-expanded="false">
+                              Our coverage
+                              </a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="./auto.html"> <img src="./images/auto_menu_icon.svg"
+                                    alt="icon">Auto</a></li>
+                                 <li><a class="dropdown-item" href=""><img src="./images/home_menu_icon.svg"
+                                    alt="icon"> Home</a></li>
+                                 <li>
+                                 </li>
+                                 <li><a class="dropdown-item" href="./group-plans.html"><img src="./images/plans_menu_icon.svg"
+                                    alt="icon">Group Plans</a></li>
+                                 <li><a class="dropdown-item" href="./marine.html"><img src="./images/marine_menu_icon.svg"
+                                    alt="icon">Marine</a></li>
+                              </ul>
+                           </li>
+                           <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                 aria-expanded="false">
+                              WHY TOCO?
+                              </a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="./about-us.html"> <img src="./images/about_menu_icon.svg"
+                                    alt="icon">About Us</a></li>
+                                 <li><a class="dropdown-item" href="#"><img src="./images/award_menu_icon.svg"
+                                    alt="icon"> Awards & Press</a></li>
+                                 <li>
+                                 </li>
+                                 <li><a class="dropdown-item" href="./reviews.html"><img src="./images/review_menu_icon.svg"
+                                    alt="icon">Reviews</a></li>
+                              </ul>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">
+                              FAQ
+                              </a>
+                           </li>
+                           <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                 aria-expanded="false">
+                              resources
+                              </a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="./contact.html"> <img src="./images/contact_menu_icon.svg"
+                                    alt="icon">Contact Us</a></li>
+                                 <li><a class="dropdown-item" href="#"><img src="./images/blog_menu_icon.svg"
+                                    alt="icon"> Blog</a></li>
+                                 <li>
+                                 </li>
+                                 <li><a class="dropdown-item" href="#"><img
+                                    src="./images/affiliate_menu_icon.svg" alt="icon">Become an
+                                    Affiliate</a>
+                                 </li>
+                                 <li><a class="dropdown-item" href="#"><img src="./images/shop_menu_icon.svg"
+                                    alt="icon">Claims Center for <br> Auto Repair Shops</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="col-lg-6 col-md-7">
+                  <div class="header_right d-flex justify-content-end align-items-center">
+                     <a href="#" class="login_btn btn">Customer Login</a>
+                     <a href="#" class="signup_btn btn">Get my quote</a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </header>
-    <!-- header section End  -->
-
-    <!-- Banner Section Start  -->
-    <section class="home_banner">
-        <div class="container">
+         </div>
+      </header>
+      <!-- header section End  -->
+      <!-- Banner Section Start  -->
+      <section class="home_banner">
+         <div class="container">
             <div class="row">
-                <div class="bg_img">
-                </div>
-                <div class="col-md-12">
-                    <div class="banner_content text-center">
-                        <h1>
-                            Guard Against Repairs. Simple coverage. <br> Zero stress.
-                        </h1>
-                        <h3>
-                            Whether it’s your car, your home, your boat, or your team, Toco has a plan that fits.
-                        </h3>
-                    </div>
-                </div>
+               <div class="bg_img">
+               </div>
+               <div class="col-md-12">
+                  <div class="banner_content text-center">
+                     <h1>
+                        Guard Against Repairs. Simple coverage. <br> Zero stress.
+                     </h1>
+                     <h3>
+                        Whether it’s your car, your home, your boat, or your team, Toco has a plan that fits.
+                     </h3>
+                  </div>
+               </div>
             </div>
             <div class="row">
-                <div class="col-xl-3 col-lg-6">
-                    <div class="plans_box text-center">
-                        <img src="./images/auto_plan_icon.svg" class="des_icon" alt="car_icon">
-                        <img src="./images/auto_mob_icon.svg" class="mob_icon" alt="car_icon" style="display: none;">
-                        <h3>
-                            Auto
-                        </h3>
-                        <p>
-                            Avoid surprise repair bills — drive with confidence.
-                        </p>
-                        <a href="./auto.html" class="explore_plans btn">Explore Auto Plans</a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6">
-                    <div class="plans_box text-center">
-                        <img src="./images/home_plan_icon.svg" class="des_icon" alt="car_icon">
-                        <img src="./images/home_mob_icon.svg" class="mob_icon" alt="car_icon" style="display: none;">
-                        <h3>
-                            Home
-                        </h3>
-                        <p>
-                            Protect the systems that keep your home running.
-                        </p>
-                        <a href="#" class="explore_plans btn">Explore Home Plans</a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6">
-                    <div class="plans_box text-center">
-                        <img src="./images/group_plan_icon.svg" class="des_icon" alt="car_icon">
-                        <img src="./images/work_mob_icon.svg" class="mob_icon" alt="car_icon" style="display: none;">
-                        <h3>
-                            Group Plans
-                        </h3>
-                        <p>
-                            Offer peace of mind to your team as an employee benefit.
-                        </p>
-                        <a href="./group-plans.html" class="explore_plans btn">Discover Toco at Work</a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6">
-                    <div class="plans_box text-center">
-                        <img src="./images/marine_plan_icon.svg" class="des_icon" alt="car_icon">
-                        <img src="./images/marine_mob_icon.svg" class="mob_icon" alt="car_icon" style="display: none;">
-                        <h3>
-                            Marine
-                        </h3>
-                        <p>
-                            Keep your boat ready for every adventure.
-                        </p>
-                        <a href="./marine.html" class="explore_plans btn">Coming Soon - Join Waitlist</a>
-                    </div>
-                </div>
+               <div class="col-xl-3 col-lg-6">
+                  <div class="plans_box text-center">
+                     <img src="./images/auto_plan_icon.svg" class="des_icon" alt="car_icon">
+                     <img src="./images/auto_mob_icon.svg" class="mob_icon" alt="car_icon" style="display: none;">
+                     <h3>
+                        Auto
+                     </h3>
+                     <p>
+                        Avoid surprise repair bills — drive with confidence.
+                     </p>
+                     <a href="./auto.html" class="explore_plans btn">Explore Auto Plans</a>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-6">
+                  <div class="plans_box text-center">
+                     <img src="./images/home_plan_icon.svg" class="des_icon" alt="car_icon">
+                     <img src="./images/home_mob_icon.svg" class="mob_icon" alt="car_icon" style="display: none;">
+                     <h3>
+                        Home
+                     </h3>
+                     <p>
+                        Protect the systems that keep your home running.
+                     </p>
+                     <a href="#" class="explore_plans btn">Explore Home Plans</a>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-6">
+                  <div class="plans_box text-center">
+                     <img src="./images/group_plan_icon.svg" class="des_icon" alt="car_icon">
+                     <img src="./images/work_mob_icon.svg" class="mob_icon" alt="car_icon" style="display: none;">
+                     <h3>
+                        Group Plans
+                     </h3>
+                     <p>
+                        Offer peace of mind to your team as an employee benefit.
+                     </p>
+                     <a href="./group-plans.html" class="explore_plans btn">Discover Toco at Work</a>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-6">
+                  <div class="plans_box text-center">
+                     <img src="./images/marine_plan_icon.svg" class="des_icon" alt="car_icon">
+                     <img src="./images/marine_mob_icon.svg" class="mob_icon" alt="car_icon" style="display: none;">
+                     <h3>
+                        Marine
+                     </h3>
+                     <p>
+                        Keep your boat ready for every adventure.
+                     </p>
+                     <a href="./marine.html" class="explore_plans btn">Coming Soon - Join Waitlist</a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- Banner Section End  -->
-
-    <!-- discover benefits section start  -->
-    <section class="discover_benefits">
-        <div class="container">
+         </div>
+      </section>
+      <!-- Banner Section End  -->
+      <!-- discover benefits section start  -->
+      <section class="discover_benefits">
+         <div class="container">
             <div class="row gx-5 align-items-center">
-                <div class="col-xl-6 col-lg-12 col-pd">
-                    <div class="benefits_img">
-                        <img src="./images/discover_benefits_img.png" width="100%" alt="benefits_image">
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-12">
-                    <div class="discover_benefits_content_wrapper">
-
-
-                        <div class="discover_benefits_content">
-                            <h2>
-                                When things break, we don’t.
-                                Discover the benefits that set us apart.
-                            </h2>
-                            <p>
-                                From no down payments to top-rated support, here’s what makes coverage with Toco feel
-                                different.
-                            </p>
-                        </div>
-                        <div class="discover_benefits_list">
-                            <ul class="p-0">
-                                <li>
-                                    <div class="list_icon">
-                                        <img src="./images/correct_icon.svg" alt="">
-                                    </div>
-                                    <div class="list_content">
-                                        <h4>
-                                            No Down Payment
-                                        </h4>
-                                        <p>
-                                            Simply make your first payment and get covered.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_icon">
-                                        <img src="./images/correct_icon.svg" alt="">
-                                    </div>
-                                    <div class="list_content">
-                                        <h4>
-                                            Cancel anytime
-                                        </h4>
-                                        <p>
-                                            Month-to-month coverage with no penalties or commitments.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_icon">
-                                        <img src="./images/correct_icon.svg" alt="">
-                                    </div>
-                                    <div class="list_content">
-                                        <h4>
-                                            Trusted by thousands
-                                        </h4>
-                                        <p>
-                                            Families, individuals, and employers count on Toco every day.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_icon">
-                                        <img src="./images/correct_icon.svg" alt="">
-                                    </div>
-                                    <div class="list_content">
-                                        <h4>
-                                            Choose Your Favorite Mechanic
-                                        </h4>
-                                        <p>
-                                            Pick any ASE-licensed shop and we’ll work with them directly.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_icon">
-                                        <img src="./images/correct_icon.svg" alt="">
-                                    </div>
-                                    <div class="list_content">
-                                        <h4>
-                                            Award-winning customer care
-                                        </h4>
-                                        <p>
-                                            Top-rated support to guide you every step of the way.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_icon">
-                                        <img src="./images/correct_icon.svg" alt="">
-                                    </div>
-                                    <div class="list_content">
-                                        <h4>
-                                            We pay the shop directly
-                                        </h4>
-                                        <p>
-                                            No paperwork, no reimbursements. We handle it.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="discover_benefits_button">
-                            <a href="#" class="explore_plans btn">Get Covered Today</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- discover benefits section end -->
-    <!-- how its work section start  -->
-    <div class="background"></div>
-    <section class="how_its_work">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="how_its_work_content text-center">
+               <div class="col-xl-6 col-lg-12 col-pd">
+                  <div class="benefits_img">
+                     <img src="./images/discover_benefits_img.png" width="100%" alt="benefits_image">
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-12">
+                  <div class="discover_benefits_content_wrapper">
+                     <div class="discover_benefits_content">
                         <h2>
-                            How it works (and why it’s so easy)
+                           When things break, we don’t.
+                           Discover the benefits that set us apart.
                         </h2>
                         <p>
-                            Three simple steps. And a team that’s with you all the way.
+                           From no down payments to top-rated support, here’s what makes coverage with Toco feel
+                           different.
                         </p>
-                    </div>
-                </div>
+                     </div>
+                     <div class="discover_benefits_list">
+                        <ul class="p-0">
+                           <li>
+                              <div class="list_icon">
+                                 <img src="./images/correct_icon.svg" alt="">
+                              </div>
+                              <div class="list_content">
+                                 <h4>
+                                    No Down Payment
+                                 </h4>
+                                 <p>
+                                    Simply make your first payment and get covered.
+                                 </p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="list_icon">
+                                 <img src="./images/correct_icon.svg" alt="">
+                              </div>
+                              <div class="list_content">
+                                 <h4>
+                                    Cancel anytime
+                                 </h4>
+                                 <p>
+                                    Month-to-month coverage with no penalties or commitments.
+                                 </p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="list_icon">
+                                 <img src="./images/correct_icon.svg" alt="">
+                              </div>
+                              <div class="list_content">
+                                 <h4>
+                                    Trusted by thousands
+                                 </h4>
+                                 <p>
+                                    Families, individuals, and employers count on Toco every day.
+                                 </p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="list_icon">
+                                 <img src="./images/correct_icon.svg" alt="">
+                              </div>
+                              <div class="list_content">
+                                 <h4>
+                                    Choose Your Favorite Mechanic
+                                 </h4>
+                                 <p>
+                                    Pick any ASE-licensed shop and we’ll work with them directly.
+                                 </p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="list_icon">
+                                 <img src="./images/correct_icon.svg" alt="">
+                              </div>
+                              <div class="list_content">
+                                 <h4>
+                                    Award-winning customer care
+                                 </h4>
+                                 <p>
+                                    Top-rated support to guide you every step of the way.
+                                 </p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="list_icon">
+                                 <img src="./images/correct_icon.svg" alt="">
+                              </div>
+                              <div class="list_content">
+                                 <h4>
+                                    We pay the shop directly
+                                 </h4>
+                                 <p>
+                                    No paperwork, no reimbursements. We handle it.
+                                 </p>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="discover_benefits_button">
+                        <a href="#" class="explore_plans btn">Get Covered Today</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- discover benefits section end -->
+      <!-- how its work section start  -->
+      <div class="background"></div>
+      <section class="how_its_work">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="how_its_work_content text-center">
+                     <h2>
+                        How it works (and why it’s so easy)
+                     </h2>
+                     <p>
+                        Three simple steps. And a team that’s with you all the way.
+                     </p>
+                  </div>
+               </div>
             </div>
             <div class="row gx-5">
-                <div class="col-xl-4 col-lg-6">
-                    <div class="work_col_height" style="align-items: start;">
-                        <div class="work_box text-center">
-                            <img src="./images/stopped_working_icon.svg" class="des_icon" alt="icon">
-                            <img src="./images/call_mob_icon.svg" class="mob_icon" alt="icon" style="display: none;">
-                            <h3>
-                                Car won’t start? Fridge stopped working?
-                            </h3>
-                            <p>
-                                We’re here for you. Our award-winning Customer Care Team will help you from start to
-                                finish—no guesswork, no stress.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="work_col_height" style="align-items: center;">
-                        <div class="work_box text-center">
-                            <img src="./images/repair_icon.svg" class="des_icon" alt="icon">
-                            <img src="./images/repair_mob_icon.svg" class="mob_icon" alt="icon" style="display: none;">
-                            <h3>
-                                We’ll handle the repair
-                            </h3>
-                            <p>
-                                Choose any licensed mechanic, contractor, or marine tech you trust. Need a
-                                recommendation? We’ve got your back. We’ll coordinate directly with them to approve the
-                                work — fast and hassle-free.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-12">
-                    <div class="work_col_height" style="align-items: end;">
-                        <div class="work_box text-center">
-                            <img src="./images/bill_icon.svg" class="des_icon" alt="icon">
-                            <img src="./images/bill_mob_icon.svg" class="mob_icon" alt="icon" style="display: none;">
-                            <h3>
-                                Toco pays the bill
-                            </h3>
-                            <p>
-                                Once your repair is authorized, you cover your deductible—we cover the rest, directly.
-                                No reimbursements, no delays. Just peace of mind.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             <div class="row">
-                <div class="btn_how text-center" style="position: relative; z-index: 111;">
-                    
-                    <a href="#" class="btn">Get my quote</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- how its work section end  -->
-
-
-    <!-- Testimonial section start  -->
-    <section class="testimonial_section" style="    position: relative;
-    z-index: 2;">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="testimonial_section_content text-center">
-                        <h2>
-                            What our customers are saying
-                        </h2>
+               <div class="col-xl-4 col-lg-6">
+                  <div class="work_col_height" style="align-items: start;">
+                     <div class="work_box text-center">
+                        <img src="./images/stopped_working_icon.svg" class="des_icon" alt="icon">
+                        <img src="./images/call_mob_icon.svg" class="mob_icon" alt="icon" style="display: none;">
+                        <h3>
+                           Car won’t start? Fridge stopped working?
+                        </h3>
                         <p>
-                            Hear from some of the thousands of people who trust Toco for their coverage needs.
+                           We’re here for you. Our award-winning Customer Care Team will help you from start to
+                           finish—no guesswork, no stress.
                         </p>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6">
+                  <div class="work_col_height" style="align-items: center;">
+                     <div class="work_box text-center">
+                        <img src="./images/repair_icon.svg" class="des_icon" alt="icon">
+                        <img src="./images/repair_mob_icon.svg" class="mob_icon" alt="icon" style="display: none;">
+                        <h3>
+                           We’ll handle the repair
+                        </h3>
+                        <p>
+                           Choose any licensed mechanic, contractor, or marine tech you trust. Need a
+                           recommendation? We’ve got your back. We’ll coordinate directly with them to approve the
+                           work — fast and hassle-free.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-12">
+                  <div class="work_col_height" style="align-items: end;">
+                     <div class="work_box text-center">
+                        <img src="./images/bill_icon.svg" class="des_icon" alt="icon">
+                        <img src="./images/bill_mob_icon.svg" class="mob_icon" alt="icon" style="display: none;">
+                        <h3>
+                           Toco pays the bill
+                        </h3>
+                        <p>
+                           Once your repair is authorized, you cover your deductible—we cover the rest, directly.
+                           No reimbursements, no delays. Just peace of mind.
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
             <div class="row">
-                <div class="col-md-12 p-0">
-                    <!-- Swiper -->
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="review_box">
-                                    <img src="./images/quotes_icon.svg" alt="icon">
-                                    <p>
-                                        I was online updating my payment information and Toco At Home popped up. I have
-                                        Toco Car Warranty and they been AWESOME. They have paid out two claims without
-                                        any hesitation. I had to jump on the Home Coverage due to them being on top of
-                                        my vehicle coverage. This company kicks butt and I recommend them to anyone.
-                                    </p>
-                                    <h4>
-                                        Daniel N. - Richmond, VA
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review_box">
-                                    <img src="./images/quotes_icon.svg" alt="icon">
-                                    <p>
-                                        I had to file a claim for a repair and was pleasantly surprised by how smooth
-                                        the process was. The repair shop was able to communicate directly with Toco
-                                        Warranty, which saved me time and hassle. The claim was approved quickly, and I
-                                        was able to get my car back on the road without any issues.
-                                    <h4>
-                                        Cora K. - Washington, DC
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review_box">
-                                    <img src="./images/quotes_icon.svg" alt="icon">
-                                    <p>
-                                        The representative was awesome!! He gave me a really good discount for my car!!
-                                        This dude should get a raise!!! GIVE THIS MAN A RAISE! He knows what us blue
-                                        collar folks are going through as far as finance goes!
-                                    </p>
-                                    <h4>
-                                        Amber G. - Bloxom, VA
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review_box">
-                                    <img src="./images/quotes_icon.svg" alt="icon">
-                                    <p>
-                                        I was looking for warranty and pulled up 5 best companies and Toco pop up. I see
-                                        why, the customer service and my agent was excellent in explaining everything
-                                        clearly. I would recommend them to anyone look for vehicle warranty.
-                                    </p>
-                                    <h4>
-                                        J. B. - Houston, TX
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review_box">
-                                    <img src="./images/quotes_icon.svg" alt="icon">
-                                    <p>
-                                        I was online updating my payment information and Toco At Home popped up. I have
-                                        Toco Car Warranty and they been AWESOME. They have paid out two claims without
-                                        any hesitation. I had to jump on the Home Coverage due to them being on top of
-                                        my vehicle coverage. This company kicks butt and I recommend them to anyone.
-                                    </p>
-                                    <h4>
-                                        Daniel N. - Richmond, VA
-                                    </h4>
-                                </div>
-                            </div>
+               <div class="btn_how text-center" style="position: relative; z-index: 111;">
+                  <a href="#" class="btn">Get my quote</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- how its work section end  -->
+      <!-- Testimonial section start  -->
+      <section class="testimonial_section" style="    position: relative;
+         z-index: 2;">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="testimonial_section_content text-center">
+                     <h2>
+                        What our customers are saying
+                     </h2>
+                     <p>
+                        Hear from some of the thousands of people who trust Toco for their coverage needs.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 p-0">
+                  <!-- Swiper -->
+                  <div class="swiper mySwiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="review_box">
+                              <img src="./images/quotes_icon.svg" alt="icon">
+                              <p>
+                                 I was online updating my payment information and Toco At Home popped up. I have
+                                 Toco Car Warranty and they been AWESOME. They have paid out two claims without
+                                 any hesitation. I had to jump on the Home Coverage due to them being on top of
+                                 my vehicle coverage. This company kicks butt and I recommend them to anyone.
+                              </p>
+                              <h4>
+                                 Daniel N. - Richmond, VA
+                              </h4>
+                           </div>
                         </div>
-                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-slide">
+                           <div class="review_box">
+                              <img src="./images/quotes_icon.svg" alt="icon">
+                              <p>
+                                 I had to file a claim for a repair and was pleasantly surprised by how smooth
+                                 the process was. The repair shop was able to communicate directly with Toco
+                                 Warranty, which saved me time and hassle. The claim was approved quickly, and I
+                                 was able to get my car back on the road without any issues.
+                              <h4>
+                                 Cora K. - Washington, DC
+                              </h4>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="review_box">
+                              <img src="./images/quotes_icon.svg" alt="icon">
+                              <p>
+                                 The representative was awesome!! He gave me a really good discount for my car!!
+                                 This dude should get a raise!!! GIVE THIS MAN A RAISE! He knows what us blue
+                                 collar folks are going through as far as finance goes!
+                              </p>
+                              <h4>
+                                 Amber G. - Bloxom, VA
+                              </h4>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="review_box">
+                              <img src="./images/quotes_icon.svg" alt="icon">
+                              <p>
+                                 I was looking for warranty and pulled up 5 best companies and Toco pop up. I see
+                                 why, the customer service and my agent was excellent in explaining everything
+                                 clearly. I would recommend them to anyone look for vehicle warranty.
+                              </p>
+                              <h4>
+                                 J. B. - Houston, TX
+                              </h4>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="review_box">
+                              <img src="./images/quotes_icon.svg" alt="icon">
+                              <p>
+                                 I was online updating my payment information and Toco At Home popped up. I have
+                                 Toco Car Warranty and they been AWESOME. They have paid out two claims without
+                                 any hesitation. I had to jump on the Home Coverage due to them being on top of
+                                 my vehicle coverage. This company kicks butt and I recommend them to anyone.
+                              </p>
+                              <h4>
+                                 Daniel N. - Richmond, VA
+                              </h4>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-pagination"></div> -->
-                    </div>
-                </div>
+                  </div>
+               </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="reviews_logo">
-                        <div class="logo">
-                            <img src="./images/BBB_logo.svg" alt="reviews_logo">
-                        </div>
-                        <div class="logo">
-                            <img src="./images/Trustpilot_logo.svg" alt="reviews_logo">
-
-                        </div>
-                        <div class="logo">
-                            <img src="./images/Google_logo.svg" alt="reviews_logo">
-
-                        </div>
-                        <div class="logo">
-                            <img src="./images/ConsumerAffairs_logo.svg" alt="reviews_logo">
-
-                        </div>
-                    </div>
-                </div>
+               <div class="col-md-12 text-center">
+                  <div class="reviews_logo">
+                     <div class="logo">
+                        <img src="./images/BBB_logo.svg" alt="reviews_logo">
+                     </div>
+                     <div class="logo">
+                        <img src="./images/Trustpilot_logo.svg" alt="reviews_logo">
+                     </div>
+                     <div class="logo">
+                        <img src="./images/Google_logo.svg" alt="reviews_logo">
+                     </div>
+                     <div class="logo">
+                        <img src="./images/ConsumerAffairs_logo.svg" alt="reviews_logo">
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- Testimonial section end  -->
-
-
-    <!-- CTA section start  -->
-    <section class="cta_section" style="    position: relative;
-    z-index: 2;">
-        <div class="container">
+         </div>
+      </section>
+      <!-- Testimonial section end  -->
+      <!-- CTA section start  -->
+      <section class="cta_section" style="    position: relative;
+         z-index: 2;">
+         <div class="container">
             <div class="row align-items-end row_reverse" style="max-width: 1152px; margin: auto;">
-                <div class="col-lg-3">
-                    <div class="bird_img">
-                        <img src="./images/toco_Bird_logo.svg" alt="icon">
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="cta_content">
-                        <h2>
-                            We believe peace of mind shouldn’t be a luxury.
-                        </h2>
-                        <p>
-                            That’s why we make protection easy, flexible, and fair — for your car, your home, your boat,
-                            and even your team. <span style="font-weight: 600;"> Toco helps you avoid financial
-                                surprises, so you can focus on living. </span>
-                        </p>
-                        <div class="cta_button">
-                            <a href="#" class="learn_more btn">Learn more about Toco</a>
-                            <a href="#" class="explore_plans btn">Get My Quote</a>
-                        </div>
-                    </div>
-                </div>
+               <div class="col-lg-3">
+                  <div class="bird_img">
+                     <img src="./images/toco_Bird_logo.svg" alt="icon">
+                  </div>
+               </div>
+               <div class="col-lg-9">
+                  <div class="cta_content">
+                     <h2>
+                        We believe peace of mind shouldn’t be a luxury.
+                     </h2>
+                     <p>
+                        That’s why we make protection easy, flexible, and fair — for your car, your home, your boat,
+                        and even your team. <span style="font-weight: 600;"> Toco helps you avoid financial
+                        surprises, so you can focus on living. </span>
+                     </p>
+                     <div class="cta_button">
+                        <a href="#" class="learn_more btn">Learn more about Toco</a>
+                        <a href="#" class="explore_plans btn">Get My Quote</a>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- CTA section end  -->
-
-
-     <!--Footer Start  -->
-    <footer style="   position: relative;  z-index: 2;">
-        <div class="container">
+         </div>
+      </section>
+      <!-- CTA section end  -->
+      <!--Footer Start  -->
+      <footer style="   position: relative;  z-index: 2;">
+         <div class="container">
             <div class="row gx-5">
-                <div class=" col-xl-3">
-                    <div class="main_logo_footer">
-                        <div class="toco_logo">
-                            <a href="./index.html"><img src="./images/toco_main_logo.svg" alt="logo"></a>
-                            <img src="./images/bbb_footer_logo.svg" class="footer_bbb" alt="img">
+               <div class=" col-xl-3">
+                  <div class="main_logo_footer">
+                     <div class="toco_logo">
+                        <a href="./index.html"><img src="./images/toco_main_logo.svg" alt="logo"></a>
+                        <img src="./images/bbb_footer_logo.svg" class="footer_bbb" alt="img">
+                     </div>
+                     <div class="social_link">
+                        <ul>
+                           <li>
+                              <a href="#"><img src="./images/linkdin.svg" alt="social_icon"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="./images/instagram.svg" alt="social_icon"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="./images/facebook.svg" alt="social_icon"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="./images/tweeter.svg" alt="social_icon"></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-xl-9">
+                  <div class="footer_discription">
+                     <div class="our_coverage">
+                        <h5>
+                           Our Coverage
+                        </h5>
+                        <ul class="p-0">
+                           <li><a href="./auto.html">Auto</a></li>
+                           <li><a href="#">Home</a></li>
+                           <li><a href="./group-plans.html">Group Plans</a></li>
+                           <li><a href="./marine.html">Marine (Coming Soon)</a></li>
+                        </ul>
+                     </div>
+                     <div class="footer_border"></div>
+                     <div class="our_coverage">
+                        <h5>
+                           Why Toco?
+                        </h5>
+                        <ul class="p-0">
+                           <li><a href="./about-us.html">About us</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="./reviews.html">Reviews</a></li>
+                        </ul>
+                     </div>
+                     <div class="footer_border"></div>
+                     <div class="our_coverage">
+                        <h5>
+                           Resources
+                        </h5>
+                        <ul class="p-0">
+                           <li><a href="#">FAQs</a></li>
+                           <li><a href="#">Costumer Login</a></li>
+                           <li><a href="#">Become an Affiliate</a></li>
+                           <li><a href="#">Claims Center for Auto <br> Repair Shops</a></li>
+                        </ul>
+                     </div>
+                     <div class="footer_border"></div>
+                     <div class="footer_contact">
+                        <h5>
+                           Get in touch
+                        </h5>
+                        <h4>
+                           <a href="./contact.html" style="color: var(--White, #FEFEFE);">Contact us</a>
+                        </h4>
+                        <div class="contact_box">
+                           <a href="#">
+                              <img src="./images/Email.svg" alt="">
+                              <h2>info@tocowarranty.com</h2>
+                           </a>
                         </div>
-                        <div class="social_link">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="./images/linkdin.svg" alt="social_icon"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="./images/instagram.svg" alt="social_icon"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="./images/facebook.svg" alt="social_icon"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="./images/tweeter.svg" alt="social_icon"></a>
-                                </li>
-                            </ul>
+                        <div class="contact_box">
+                           <a href="#">
+                              <div class="icon">
+                                 <img src="./images/Phone.svg" alt="">
+                              </div>
+                              <div class="telephone">
+                                 <h2>855-298-8626</h2>
+                                 <h2 style="opacity: 0.8;">
+                                    Customer Care Hours: <br>
+                                    Mon – Fri 9am – 5pm CST
+                                 </h2>
+                              </div>
+                           </a>
                         </div>
-                    </div>
-                </div>
-                <div class=" col-xl-9">
-                    <div class="footer_discription">
-                        <div class="our_coverage">
-                            <h5>
-                                Our Coverage
-                            </h5>
-                            <ul class="p-0">
-                                <li><a href="./auto.html">Auto</a></li>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="./group-plans.html">Group Plans</a></li>
-                                <li><a href="./marine.html">Marine (Coming Soon)</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer_border"></div>
-                        <div class="our_coverage">
-                            <h5>
-                                Why Toco?
-                            </h5>
-                            <ul class="p-0">
-                                <li><a href="./about-us.html">About us</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="./reviews.html">Reviews</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer_border"></div>
-                        <div class="our_coverage">
-                            <h5>
-                                Resources
-                            </h5>
-                            <ul class="p-0">
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Costumer Login</a></li>
-                                <li><a href="#">Become an Affiliate</a></li>
-                                <li><a href="#">Claims Center for Auto <br> Repair Shops</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer_border"></div>
-                        <div class="footer_contact">
-                            <h5>
-                                Get in touch
-                            </h5>
-                            <h4>
-                                <a href="./contact.html" style="color: var(--White, #FEFEFE);">Contact us</a>
-                                
-                            </h4>
-                            <div class="contact_box">
-                                <a href="#"><img src="./images/Email.svg" alt="">
-                                    <h2>info@tocowarranty.com</h2>
-                                </a>
-                            </div>
-                            <div class="contact_box">
-                                <a href="#">
-                                    <div class="icon">
-
-                                        <img src="./images/Phone.svg" alt="">
-                                    </div>
-                                    <div class="telephone">
-                                        <h2>855-298-8626</h2>
-                                        <h2 style="opacity: 0.8;">
-                                            Customer Care Hours: <br>
-                                            Mon – Fri 9am – 5pm CST
-                                        </h2>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
             <hr style="border: 1px solid #D9DBE9; margin-top: 40px; margin-bottom: 0;">
             <div class="row">
-                <div class="col-12">
-                    <div class="copyright text-center">
-                        <p>© 2025 Toco Warranty | All Rights Reserved. Terms & Conditions | Privacy Policy
-                            <br>
-                            <br>
-                            *Not currently available in all states. Click here for more details.
-                        </p>
-                    </div>
-                </div>
+               <div class="col-12">
+                  <div class="copyright text-center">
+                     <p>© 2025 Toco Warranty | All Rights Reserved. Terms & Conditions | Privacy Policy
+                        <br>
+                        <br>
+                        *Not currently available in all states. Click here for more details.
+                     </p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </footer>
-    <!--Footer End  -->
-
-
-
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 32,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 12,
-                },
-                767: {
-                    slidesPerView: 1.9,
-                    spaceBetween: 20,
-                },
-                992: {
-                    slidesPerView: 2.9,
-                    spaceBetween: 30,
-                },
-                1200: {
-                    slidesPerView: 3.9,
-                    spaceBetween: 32,
-                },
-            },
-        });
-    </script>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-</body>
-
+         </div>
+      </footer>
+      <!--Footer End  -->
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+         var swiper = new Swiper(".mySwiper", {
+             spaceBetween: 32,
+             centeredSlides: true,
+             autoplay: {
+                 delay: 2500,
+                 disableOnInteraction: false,
+             },
+             pagination: {
+                 el: ".swiper-pagination",
+                 clickable: true,
+             },
+             navigation: {
+                 nextEl: ".swiper-button-next",
+                 prevEl: ".swiper-button-prev",
+             },
+             breakpoints: {
+                 320: {
+                     slidesPerView: 1.2,
+                     spaceBetween: 12,
+                 },
+                 767: {
+                     slidesPerView: 1.9,
+                     spaceBetween: 20,
+                 },
+                 992: {
+                     slidesPerView: 2.9,
+                     spaceBetween: 30,
+                 },
+                 1200: {
+                     slidesPerView: 3.9,
+                     spaceBetween: 32,
+                 },
+             },
+         });
+      </script>
+      <!-- Optional JavaScript; choose one of the two! -->
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+         -->
+   </body>
 </html>

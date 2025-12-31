@@ -1,597 +1,568 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- Style CSS  -->
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!-- font-awesome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <title>Reviews</title>
-</head>
-
-<body>
-
-    <!-- header section Start  -->
-    <header>
-        <div class="container">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <!-- Style CSS  -->
+      <link rel="stylesheet" href="./css/style.css">
+      <!-- font-awesome cdn  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <title>Reviews</title>
+   </head>
+   <body>
+      <!-- header section Start  -->
+      <header>
+         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-5">
-                    <nav class="navbar navbar-expand-xl bg-body- p-0">
-                        <a class="navbar-brand" href="/index.html"><img src="./images/toco_main_logo.svg" alt="main_logo"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Our coverage
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./auto.html"> <img src="./images/auto_menu_icon.svg"
-                                                    alt="icon">Auto</a></li>
-                                        <li><a class="dropdown-item" href=""><img src="./images/home_menu_icon.svg"
-                                                    alt="icon"> Home</a></li>
-                                        <li>
-                                        </li>
-                                        <li><a class="dropdown-item" href="./group-plans.html"><img src="./images/plans_menu_icon.svg"
-                                                    alt="icon">Group Plans</a></li>
-                                        <li><a class="dropdown-item" href="./marine.html"><img src="./images/marine_menu_icon.svg"
-                                                    alt="icon">Marine</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        WHY TOCO?
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./about-us.html"> <img src="./images/about_menu_icon.svg"
-                                                    alt="icon">About Us</a></li>
-                                        <li><a class="dropdown-item" href="#"><img src="./images/award_menu_icon.svg"
-                                                    alt="icon"> Awards & Press</a></li>
-                                        <li>
-                                        </li>
-                                        <li><a class="dropdown-item" href="./reviews.html"><img src="./images/review_menu_icon.svg"
-                                                    alt="icon">Reviews</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        FAQ
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        resources
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./contact.html"> <img src="./images/contact_menu_icon.svg"
-                                                    alt="icon">Contact Us</a></li>
-                                        <li><a class="dropdown-item" href="#"><img src="./images/blog_menu_icon.svg"
-                                                    alt="icon"> Blog</a></li>
-                                        <li>
-                                        </li>
-                                        <li><a class="dropdown-item" href="#"><img
-                                                    src="./images/affiliate_menu_icon.svg" alt="icon">Become an
-                                                Affiliate</a></li>
-                                        <li><a class="dropdown-item" href="#"><img src="./images/shop_menu_icon.svg"
-                                                    alt="icon">Claims Center for <br> Auto Repair Shops</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+               <div class="col-lg-6 col-md-5">
+                  <nav class="navbar navbar-expand-xl bg-body- p-0">
+                     <a class="navbar-brand" href="/index.html"><img src="./images/toco_main_logo.svg" alt="main_logo"></a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                           <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                 aria-expanded="false">
+                              Our coverage
+                              </a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="./auto.html"> <img src="./images/auto_menu_icon.svg"
+                                    alt="icon">Auto</a></li>
+                                 <li><a class="dropdown-item" href=""><img src="./images/home_menu_icon.svg"
+                                    alt="icon"> Home</a></li>
+                                 <li>
+                                 </li>
+                                 <li><a class="dropdown-item" href="./group-plans.html"><img src="./images/plans_menu_icon.svg"
+                                    alt="icon">Group Plans</a></li>
+                                 <li><a class="dropdown-item" href="./marine.html"><img src="./images/marine_menu_icon.svg"
+                                    alt="icon">Marine</a></li>
+                              </ul>
+                           </li>
+                           <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                 aria-expanded="false">
+                              WHY TOCO?
+                              </a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="./about-us.html"> <img src="./images/about_menu_icon.svg"
+                                    alt="icon">About Us</a></li>
+                                 <li><a class="dropdown-item" href="#"><img src="./images/award_menu_icon.svg"
+                                    alt="icon"> Awards & Press</a></li>
+                                 <li>
+                                 </li>
+                                 <li><a class="dropdown-item" href="./reviews.html"><img src="./images/review_menu_icon.svg"
+                                    alt="icon">Reviews</a></li>
+                              </ul>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">
+                              FAQ
+                              </a>
+                           </li>
+                           <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                 aria-expanded="false">
+                              resources
+                              </a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="./contact.html"> <img src="./images/contact_menu_icon.svg"
+                                    alt="icon">Contact Us</a></li>
+                                 <li><a class="dropdown-item" href="#"><img src="./images/blog_menu_icon.svg"
+                                    alt="icon"> Blog</a></li>
+                                 <li>
+                                 </li>
+                                 <li><a class="dropdown-item" href="#"><img
+                                    src="./images/affiliate_menu_icon.svg" alt="icon">Become an
+                                    Affiliate</a>
+                                 </li>
+                                 <li><a class="dropdown-item" href="#"><img src="./images/shop_menu_icon.svg"
+                                    alt="icon">Claims Center for <br> Auto Repair Shops</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="col-lg-6 col-md-7">
+                  <div class="header_right d-flex justify-content-end align-items-center">
+                     <a href="#" class="login_btn btn">Customer Login</a>
+                     <a href="#" class="signup_btn btn">Get my quote</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- header section End  -->
+      <!-- Coverages Banner Section Start  -->
+      <section class="coverage_banner review_banner"
+         style="background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.39%, rgba(0, 0, 0, 0.40) 39.93%), url(./images/review_banner_img.png) lightgray 0px  / cover no-repeat;">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="coverage_banner_content">
+                     <h3>
+                        reviews
+                     </h3>
+                     <h1>
+                        Trusted by thousands of customers nationwide
+                     </h1>
+                     <p>
+                        See what real customers are saying about their experience with Toco.
+                     </p>
+                     <div class="reviews_logo">
+                        <div class="logo">
+                           <img src="./images/BBB_white_logo.svg" alt="reviews_logo">
                         </div>
-                    </nav>
-                </div>
-                <div class="col-lg-6 col-md-7">
-                    <div class="header_right d-flex justify-content-end align-items-center">
-                        <a href="#" class="login_btn btn">Customer Login</a>
-                        <a href="#" class="signup_btn btn">Get my quote</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header section End  -->
-
-    <!-- Coverages Banner Section Start  -->
-    <section class="coverage_banner review_banner"
-        style="background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.39%, rgba(0, 0, 0, 0.40) 39.93%), url(./images/review_banner_img.png) lightgray 0px  / cover no-repeat;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="coverage_banner_content">
-                        <h3>
-                            reviews
-                        </h3>
-                        <h1>
-                            Trusted by thousands of customers nationwide
-                        </h1>
-                        <p>
-                            See what real customers are saying about their experience with Toco.
-                        </p>
-                        <div class="reviews_logo">
-                            <div class="logo">
-                                <img src="./images/BBB_white_logo.svg" alt="reviews_logo">
-                            </div>
-                            <div class="logo">
-                                <img src="./images/Trustpilot_white_logo.svg" alt="reviews_logo">
-
-                            </div>
-                            <div class="logo">
-                                <img src="./images/Google_logo.svg" alt="reviews_logo">
-
-                            </div>
-                            <div class="logo">
-                                <img src="./images/ConsumerAffairs_white_logo.svg" alt="reviews_logo">
-                            </div>
+                        <div class="logo">
+                           <img src="./images/Trustpilot_white_logo.svg" alt="reviews_logo">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Coverages Banner Section End  -->
-
-    <!-- Testimonial slider section start  -->
-    <section class="testimonial_slider_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- Swiper -->
-                    <div class="swiper sliderSwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="review_box">
-                                    <p>
-                                        “Toco is a very trusted company. They stand behind their warranties. I have a
-                                        2012 Mercedes GLK 350; the transmission went out. Claim paid $5,000. I trust
-                                        Toco.”
-                                    </p>
-                                    <h4>
-                                        Jearold L.
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review_box">
-                                    <p>
-                                        “When I called, they immediately took care of my problem and started the
-                                        process. They called to let me know everything was approved, and all I had to
-                                        pay was my deductible. They were very professional, courteous, and friendly.”
-                                    <h4>
-                                        Beverly W.
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review_box">
-                                    <p>
-                                        “So glad I’m with the right company, Toco. First-time customer; my A/C
-                                        compressor went out. Toco lived up to their commitment. No headache, and all I
-                                        had to pay was my deductible. I will forever be a Toco customer. They do what
-                                        they say. Thank you, Toco.”
-                                    </p>
-                                    <h4>
-                                        Christopher C.
-                                    </h4>
-                                </div>
-                            </div>
+                        <div class="logo">
+                           <img src="./images/Google_logo.svg" alt="reviews_logo">
                         </div>
-                        <div class="swiper-button-next arrow_button"><i class="fa-solid fa-arrow-right"></i></div>
-                        <div class="swiper-button-prev arrow_button"><i class="fa-solid fa-arrow-left"></i></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
+                        <div class="logo">
+                           <img src="./images/ConsumerAffairs_white_logo.svg" alt="reviews_logo">
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- Testimonial slider section end  -->
-
-
-    <!-- Testimonial section start  -->
-    <section class="testimonial_block_section" style=" position: relative;  z-index: 2;">
-        <div class="container">
+         </div>
+      </section>
+      <!-- Coverages Banner Section End  -->
+      <!-- Testimonial slider section start  -->
+      <section class="testimonial_slider_section">
+         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="testimonial_section_content text-center">
-                        <h2>
-                            Learn why Toco is the most trusted consumer choice
-                        </h2>
-                        <p>
-                            We help people handle the unexpected — fast, fair, and stress-free.
-                        </p>
-                    </div>
-                </div>
+               <div class="col-md-12">
+                  <!-- Swiper -->
+                  <div class="swiper sliderSwiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="review_box">
+                              <p>
+                                 “Toco is a very trusted company. They stand behind their warranties. I have a
+                                 2012 Mercedes GLK 350; the transmission went out. Claim paid $5,000. I trust
+                                 Toco.”
+                              </p>
+                              <h4>
+                                 Jearold L.
+                              </h4>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="review_box">
+                              <p>
+                                 “When I called, they immediately took care of my problem and started the
+                                 process. They called to let me know everything was approved, and all I had to
+                                 pay was my deductible. They were very professional, courteous, and friendly.”
+                              <h4>
+                                 Beverly W.
+                              </h4>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="review_box">
+                              <p>
+                                 “So glad I’m with the right company, Toco. First-time customer; my A/C
+                                 compressor went out. Toco lived up to their commitment. No headache, and all I
+                                 had to pay was my deductible. I will forever be a Toco customer. They do what
+                                 they say. Thank you, Toco.”
+                              </p>
+                              <h4>
+                                 Christopher C.
+                              </h4>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-button-next arrow_button"><i class="fa-solid fa-arrow-right"></i></div>
+                     <div class="swiper-button-prev arrow_button"><i class="fa-solid fa-arrow-left"></i></div>
+                     <div class="swiper-pagination"></div>
+                  </div>
+               </div>
             </div>
+         </div>
+      </section>
+      <!-- Testimonial slider section end  -->
+      <!-- Testimonial section start  -->
+      <section class="testimonial_block_section" style=" position: relative;  z-index: 2;">
+         <div class="container">
             <div class="row">
-                <div class="col-xl-4 col-lg-6">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            I was online updating my payment information and Toco At Home popped up. I have Toco Car
-                            Warranty and they been AWESOME. They have paid out two claims without any hesitation. I had
-                            to jump on the Home Coverage due to them being on top of my vehicle coverage. This company
-                            kicks butt and I recommend them to anyone.
-                        </p>
-                        <h4>
-                            Daniel N. - Richmond, VA
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            I had to file a claim for a repair and was pleasantly surprised by how smooth the process
-                            was. The repair shop was able to communicate directly with Toco Warranty, which saved me
-                            time and hassle. The claim was approved quickly, and I was able to get my car back on the
-                            road without any issues. </p>
-                        <h4>
-                            Cora K. - Washington, DC
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            The representative was awesome!! He gave me a really good discount for my car!! This dude
-                            should get a raise!!! GIVE THIS MAN A RAISE! He knows what us blue collar folks are going
-                            through as far as finance goes!
-                        </p>
-                        <h4>
-                            Amber G. - Bloxom, VA
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            I was looking for warranty and pulled up 5 best companies and Toco pop up. I see why, the
-                            customer service and my agent was excellent in explaining everything clearly. I would
-                            recommend them to anyone look for vehicle warranty.
-                        </p>
-                        <h4>
-                            J. B. - Houston, TX
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            My Customer Service Representative was very professional, courteous and informative. He
-                            provided me with excellent service and carefully explained all options associated with my
-                            contract, even taking time to fully explained new options and features I didn't know about.
-                            I'm pleased with the service I received from him.
-                        </p>
-                        <h4>
-                            Marcus B. - San Antonio, TX
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            Excellent service. The rep answered all of my questions & explained everything clearly. Very
-                            surprised by the rates & coverage I received. When I hung up I had a peace of mind &
-                            confidence knowing just purchased a "warranty" for my vehicle with basically no risk of
-                            losing any money.
-                        </p>
-                        <h4>
-                            Kayla B. - Austin, TX
-                        </h4>
-                    </div>
-                </div>
-
-
-                <div class="col-xl-4 col-lg-6 d-none more-box">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            The customer service experience was excellent. She was detailed, precise, and fluent when it
-                            came to selling the product. She also gave me a good comparison. I love the fact that she
-                            was willing to sign me on immediately as far as getting me covered because I drive a lot and
-                            I want to be safe than sorry down the road.
-                        </p>
-                        <h4>
-                            Tevin B. - Saginaw, MI
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 d-none more-box">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            Very good service. Taking time to listen to my problem and quickly helping me get my vehicle
-                            back. The car repair shop was well please. The deductible was reasonable. I really dislike
-                            when my vehicle is down. So happy to have it back running again.
-                        </p>
-                        <h4>
-                            Bettie S. - Indianapolis, IN
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 d-none more-box">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            Experience with Toco warranty have been great. Great value, great interest, plenty more,
-                            they fix plenty of mechanical issues. They have towing services, roadside assistance,
-                            mechanical, ASE certified, low down payment, low monthly installments. I would recommend
-                            Toco warranty to anyone out there who looking for car Shield.
-                        </p>
-                        <h4>
-                            Carl B. - Bridgeport, CT
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 d-none more-box">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            She laid everything down flat to me. She was very knowledgeable of the service and that I
-                            give her a 10 for the fine work she did to me. Seem better than what's the other company's
-                            had to offer. Now I will feel better about driving my car more.
-                        </p>
-                        <h4>
-                            Barry W. - Philadelphia, PA
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 d-none more-box">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            I loved the professionalism and great customer service. The ease of purchasing and being
-                            given the value of the product was awesome. Really enjoyed the customer service and support.
-                            To know that I will be able to get my cars fixed and have peace of mind really makes me so
-                            happy. Toco Warranty is a solid company that treats its customers like family.
-                        </p>
-                        <h4>
-                            Katherine S. - Winston-Salem, NC
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 d-none more-box">
-                    <div class="review_box">
-                        <img src="./images/quotes_icon.svg" alt="icon">
-                        <p>
-                            My experience with purchasing my car warranty was excellent and easy. I'm very satisfied
-                            with the outcome. Thank you Toco. I am pleased to have made my experience easy and very
-                            satisfying, and the customer service was excellent and the reps are very polite.
-                        </p>
-                        <h4>
-                            Sydney M. - Buffalo, NY
-                        </h4>
-                    </div>
-                </div>
+               <div class="col-md-12">
+                  <div class="testimonial_section_content text-center">
+                     <h2>
+                        Learn why Toco is the most trusted consumer choice
+                     </h2>
+                     <p>
+                        We help people handle the unexpected — fast, fair, and stress-free.
+                     </p>
+                  </div>
+               </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <div class="text-center see_more_btn">
-                        <button id="loadMoreBtn" class="btn btn-primary">See more reviews</button>
-                    </div>
-                </div>
+               <div class="col-xl-4 col-lg-6">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        I was online updating my payment information and Toco At Home popped up. I have Toco Car
+                        Warranty and they been AWESOME. They have paid out two claims without any hesitation. I had
+                        to jump on the Home Coverage due to them being on top of my vehicle coverage. This company
+                        kicks butt and I recommend them to anyone.
+                     </p>
+                     <h4>
+                        Daniel N. - Richmond, VA
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        I had to file a claim for a repair and was pleasantly surprised by how smooth the process
+                        was. The repair shop was able to communicate directly with Toco Warranty, which saved me
+                        time and hassle. The claim was approved quickly, and I was able to get my car back on the
+                        road without any issues. 
+                     </p>
+                     <h4>
+                        Cora K. - Washington, DC
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        The representative was awesome!! He gave me a really good discount for my car!! This dude
+                        should get a raise!!! GIVE THIS MAN A RAISE! He knows what us blue collar folks are going
+                        through as far as finance goes!
+                     </p>
+                     <h4>
+                        Amber G. - Bloxom, VA
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        I was looking for warranty and pulled up 5 best companies and Toco pop up. I see why, the
+                        customer service and my agent was excellent in explaining everything clearly. I would
+                        recommend them to anyone look for vehicle warranty.
+                     </p>
+                     <h4>
+                        J. B. - Houston, TX
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        My Customer Service Representative was very professional, courteous and informative. He
+                        provided me with excellent service and carefully explained all options associated with my
+                        contract, even taking time to fully explained new options and features I didn't know about.
+                        I'm pleased with the service I received from him.
+                     </p>
+                     <h4>
+                        Marcus B. - San Antonio, TX
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        Excellent service. The rep answered all of my questions & explained everything clearly. Very
+                        surprised by the rates & coverage I received. When I hung up I had a peace of mind &
+                        confidence knowing just purchased a "warranty" for my vehicle with basically no risk of
+                        losing any money.
+                     </p>
+                     <h4>
+                        Kayla B. - Austin, TX
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 d-none more-box">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        The customer service experience was excellent. She was detailed, precise, and fluent when it
+                        came to selling the product. She also gave me a good comparison. I love the fact that she
+                        was willing to sign me on immediately as far as getting me covered because I drive a lot and
+                        I want to be safe than sorry down the road.
+                     </p>
+                     <h4>
+                        Tevin B. - Saginaw, MI
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 d-none more-box">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        Very good service. Taking time to listen to my problem and quickly helping me get my vehicle
+                        back. The car repair shop was well please. The deductible was reasonable. I really dislike
+                        when my vehicle is down. So happy to have it back running again.
+                     </p>
+                     <h4>
+                        Bettie S. - Indianapolis, IN
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 d-none more-box">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        Experience with Toco warranty have been great. Great value, great interest, plenty more,
+                        they fix plenty of mechanical issues. They have towing services, roadside assistance,
+                        mechanical, ASE certified, low down payment, low monthly installments. I would recommend
+                        Toco warranty to anyone out there who looking for car Shield.
+                     </p>
+                     <h4>
+                        Carl B. - Bridgeport, CT
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 d-none more-box">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        She laid everything down flat to me. She was very knowledgeable of the service and that I
+                        give her a 10 for the fine work she did to me. Seem better than what's the other company's
+                        had to offer. Now I will feel better about driving my car more.
+                     </p>
+                     <h4>
+                        Barry W. - Philadelphia, PA
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 d-none more-box">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        I loved the professionalism and great customer service. The ease of purchasing and being
+                        given the value of the product was awesome. Really enjoyed the customer service and support.
+                        To know that I will be able to get my cars fixed and have peace of mind really makes me so
+                        happy. Toco Warranty is a solid company that treats its customers like family.
+                     </p>
+                     <h4>
+                        Katherine S. - Winston-Salem, NC
+                     </h4>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-6 d-none more-box">
+                  <div class="review_box">
+                     <img src="./images/quotes_icon.svg" alt="icon">
+                     <p>
+                        My experience with purchasing my car warranty was excellent and easy. I'm very satisfied
+                        with the outcome. Thank you Toco. I am pleased to have made my experience easy and very
+                        satisfying, and the customer service was excellent and the reps are very polite.
+                     </p>
+                     <h4>
+                        Sydney M. - Buffalo, NY
+                     </h4>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- Testimonial section end  -->
-
-
-    <!-- CTA section start  -->
-    <section class="cta_section review_page_sec" style="    position: relative;
-    z-index: 2;">
-        <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="text-center see_more_btn">
+                     <button id="loadMoreBtn" class="btn btn-primary">See more reviews</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Testimonial section end  -->
+      <!-- CTA section start  -->
+      <section class="cta_section review_page_sec" style="    position: relative;
+         z-index: 2;">
+         <div class="container">
             <div class="row align-items-end row_reverse" style="max-width: 1152px; margin: auto;">
-                <div class="col-lg-3">
-                    <div class="bird_img">
-                        <img src="./images/toco_Bird_logo.svg" alt="icon">
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="cta_content">
-                        <h2>
-                            We believe peace of mind shouldn’t be a luxury.
-                        </h2>
-                        <p>
-                            That’s why we make protection easy, flexible, and fair — for your car, your home, your boat,
-                            and even your team. <span style="font-weight: 600;"> Toco helps you avoid financial
-                                surprises, so you can focus on living. </span>
-                        </p>
-                        <div class="cta_button">
-                            <a href="#" class="learn_more btn">Learn more about Toco</a>
-                            <a href="#" class="explore_plans btn">Get My Quote</a>
-                        </div>
-                    </div>
-                </div>
+               <div class="col-lg-3">
+                  <div class="bird_img">
+                     <img src="./images/toco_Bird_logo.svg" alt="icon">
+                  </div>
+               </div>
+               <div class="col-lg-9">
+                  <div class="cta_content">
+                     <h2>
+                        We believe peace of mind shouldn’t be a luxury.
+                     </h2>
+                     <p>
+                        That’s why we make protection easy, flexible, and fair — for your car, your home, your boat,
+                        and even your team. <span style="font-weight: 600;"> Toco helps you avoid financial
+                        surprises, so you can focus on living. </span>
+                     </p>
+                     <div class="cta_button">
+                        <a href="#" class="learn_more btn">Learn more about Toco</a>
+                        <a href="#" class="explore_plans btn">Get My Quote</a>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- CTA section end  -->
-
-     <!--Footer Start  -->
-    <footer style="   position: relative;  z-index: 2;">
-        <div class="container">
+         </div>
+      </section>
+      <!-- CTA section end  -->
+      <!--Footer Start  -->
+      <footer style="   position: relative;  z-index: 2;">
+         <div class="container">
             <div class="row gx-5">
-                <div class=" col-xl-3">
-                    <div class="main_logo_footer">
-                        <div class="toco_logo">
-                            <a href="./index.html"><img src="./images/toco_main_logo.svg" alt="logo"></a>
-                            <img src="./images/bbb_footer_logo.svg" class="footer_bbb" alt="img">
+               <div class=" col-xl-3">
+                  <div class="main_logo_footer">
+                     <div class="toco_logo">
+                        <a href="./index.html"><img src="./images/toco_main_logo.svg" alt="logo"></a>
+                        <img src="./images/bbb_footer_logo.svg" class="footer_bbb" alt="img">
+                     </div>
+                     <div class="social_link">
+                        <ul>
+                           <li>
+                              <a href="#"><img src="./images/linkdin.svg" alt="social_icon"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="./images/instagram.svg" alt="social_icon"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="./images/facebook.svg" alt="social_icon"></a>
+                           </li>
+                           <li>
+                              <a href="#"><img src="./images/tweeter.svg" alt="social_icon"></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-xl-9">
+                  <div class="footer_discription">
+                     <div class="our_coverage">
+                        <h5>
+                           Our Coverage
+                        </h5>
+                        <ul class="p-0">
+                           <li><a href="./auto.html">Auto</a></li>
+                           <li><a href="#">Home</a></li>
+                           <li><a href="./group-plans.html">Group Plans</a></li>
+                           <li><a href="./marine.html">Marine (Coming Soon)</a></li>
+                        </ul>
+                     </div>
+                     <div class="footer_border"></div>
+                     <div class="our_coverage">
+                        <h5>
+                           Why Toco?
+                        </h5>
+                        <ul class="p-0">
+                           <li><a href="./about-us.html">About us</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="./reviews.html">Reviews</a></li>
+                        </ul>
+                     </div>
+                     <div class="footer_border"></div>
+                     <div class="our_coverage">
+                        <h5>
+                           Resources
+                        </h5>
+                        <ul class="p-0">
+                           <li><a href="#">FAQs</a></li>
+                           <li><a href="#">Costumer Login</a></li>
+                           <li><a href="#">Become an Affiliate</a></li>
+                           <li><a href="#">Claims Center for Auto <br> Repair Shops</a></li>
+                        </ul>
+                     </div>
+                     <div class="footer_border"></div>
+                     <div class="footer_contact">
+                        <h5>
+                           Get in touch
+                        </h5>
+                        <h4>
+                           <a href="./contact.html" style="color: var(--White, #FEFEFE);">Contact us</a>
+                        </h4>
+                        <div class="contact_box">
+                           <a href="#">
+                              <img src="./images/Email.svg" alt="">
+                              <h2>info@tocowarranty.com</h2>
+                           </a>
                         </div>
-                        <div class="social_link">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="./images/linkdin.svg" alt="social_icon"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="./images/instagram.svg" alt="social_icon"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="./images/facebook.svg" alt="social_icon"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="./images/tweeter.svg" alt="social_icon"></a>
-                                </li>
-                            </ul>
+                        <div class="contact_box">
+                           <a href="#">
+                              <div class="icon">
+                                 <img src="./images/Phone.svg" alt="">
+                              </div>
+                              <div class="telephone">
+                                 <h2>855-298-8626</h2>
+                                 <h2 style="opacity: 0.8;">
+                                    Customer Care Hours: <br>
+                                    Mon – Fri 9am – 5pm CST
+                                 </h2>
+                              </div>
+                           </a>
                         </div>
-                    </div>
-                </div>
-                <div class=" col-xl-9">
-                    <div class="footer_discription">
-                        <div class="our_coverage">
-                            <h5>
-                                Our Coverage
-                            </h5>
-                            <ul class="p-0">
-                                <li><a href="./auto.html">Auto</a></li>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="./group-plans.html">Group Plans</a></li>
-                                <li><a href="./marine.html">Marine (Coming Soon)</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer_border"></div>
-                        <div class="our_coverage">
-                            <h5>
-                                Why Toco?
-                            </h5>
-                            <ul class="p-0">
-                                <li><a href="./about-us.html">About us</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="./reviews.html">Reviews</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer_border"></div>
-                        <div class="our_coverage">
-                            <h5>
-                                Resources
-                            </h5>
-                            <ul class="p-0">
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Costumer Login</a></li>
-                                <li><a href="#">Become an Affiliate</a></li>
-                                <li><a href="#">Claims Center for Auto <br> Repair Shops</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer_border"></div>
-                        <div class="footer_contact">
-                            <h5>
-                                Get in touch
-                            </h5>
-                            <h4>
-                                <a href="./contact.html" style="color: var(--White, #FEFEFE);">Contact us</a>
-                                
-                            </h4>
-                            <div class="contact_box">
-                                <a href="#"><img src="./images/Email.svg" alt="">
-                                    <h2>info@tocowarranty.com</h2>
-                                </a>
-                            </div>
-                            <div class="contact_box">
-                                <a href="#">
-                                    <div class="icon">
-
-                                        <img src="./images/Phone.svg" alt="">
-                                    </div>
-                                    <div class="telephone">
-                                        <h2>855-298-8626</h2>
-                                        <h2 style="opacity: 0.8;">
-                                            Customer Care Hours: <br>
-                                            Mon – Fri 9am – 5pm CST
-                                        </h2>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
             <hr style="border: 1px solid #D9DBE9; margin-top: 40px; margin-bottom: 0;">
             <div class="row">
-                <div class="col-12">
-                    <div class="copyright text-center">
-                        <p>© 2025 Toco Warranty | All Rights Reserved. Terms & Conditions | Privacy Policy
-                            <br>
-                            <br>
-                            *Not currently available in all states. Click here for more details.
-                        </p>
-                    </div>
-                </div>
+               <div class="col-12">
+                  <div class="copyright text-center">
+                     <p>© 2025 Toco Warranty | All Rights Reserved. Terms & Conditions | Privacy Policy
+                        <br>
+                        <br>
+                        *Not currently available in all states. Click here for more details.
+                     </p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </footer>
-    <!--Footer End  -->
-
-
-
-    <script src="app.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".sliderSwiper", {
-            spaceBetween: 32,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                },
-            },
-        });
-    </script>
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-</body>
-
+         </div>
+      </footer>
+      <!--Footer End  -->
+      <script src="app.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+         var swiper = new Swiper(".sliderSwiper", {
+             spaceBetween: 32,
+             centeredSlides: true,
+             autoplay: {
+                 delay: 2500,
+                 disableOnInteraction: false,
+             },
+             pagination: {
+                 el: ".swiper-pagination",
+                 clickable: true,
+             },
+             navigation: {
+                 nextEl: ".swiper-button-next",
+                 prevEl: ".swiper-button-prev",
+             },
+             breakpoints: {
+                 320: {
+                     slidesPerView: 1,
+                     spaceBetween: 30,
+                 },
+             },
+         });
+      </script>
+      <!-- Optional JavaScript; choose one of the two! -->
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+         -->
+   </body>
 </html>
