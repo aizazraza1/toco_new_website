@@ -1,14 +1,58 @@
 document.getElementById('loadMoreBtn').addEventListener('click', function() {
-    // Woh saare elements select karein jisme 'more-box' class hai
     var hiddenBoxes = document.querySelectorAll('.more-box');
     
-    // Loop chala kar sabse 'd-none' class hata dein
     hiddenBoxes.forEach(function(box) {
         box.classList.remove('d-none');
-        // Optional: Thoda smooth animation ke liye fade-in class add kar sakte hain
         box.classList.add('animate__animated', 'animate__fadeIn'); 
     });
 
-    // Button ko hide kar dein (kyunki sab show ho gaya)
     this.style.display = 'none';
 });
+
+
+
+
+// faq tabs 
+
+function openTab(evt, tabName) {
+  // 1. Saare Content Panes ko chupayen
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab_pane");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].classList.remove("active_pane"); // Hide content
+  }
+
+  // 2. Saare Buttons se 'active' class hatayen
+  tablinks = document.getElementsByClassName("tab_btn");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+
+  // 3. Click kiye gaye Tab ka content dikhayein
+  document.getElementById(tabName).classList.add("active_pane");
+  
+  // 4. Click kiye gaye Button ko active karein
+  evt.currentTarget.classList.add("active");
+}
+
+
+
+// blog 
+
+function filterSelection(category) {
+    var items = document.getElementsByClassName('item');
+    if (category === 'all') {
+        for (var i = 0; i < items.length; i++) {
+            items[i].style.display = 'block';
+        }
+    } else {
+        for (var i = 0; i < items.length; i++) {
+            if (items[i].classList.contains(category)) {
+                items[i].style.display = 'block';
+            } else {
+                items[i].style.display = 'none';
+            }
+        }
+    }
+}
+
