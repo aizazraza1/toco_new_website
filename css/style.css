@@ -2439,7 +2439,10 @@ span.swiper-pagination-bullet {
   max-width: 100%;
   margin-bottom: 12px;
 }
-
+.timeline_sec .discover_button {
+    display: flex;
+    gap: 16px;
+}
 
 /* =========================================
    Claim Center Page Start
@@ -3964,6 +3967,12 @@ header {
 
   .timeline_sec .heading h5 {
     font-size: 18px;
+  }
+  .timeline_sec .discover_button {
+    display: block;
+}
+  .timeline_sec .discover_button .faq-btn{
+    margin-top: 20px;
   }
 
   .making_a_claim {
