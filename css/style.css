@@ -3119,6 +3119,9 @@ span.swiper-pagination-bullet {
 header .navbar-nav {
     align-items: start;
 }
+header {
+        top: 38px;
+    }
 
   .home_banner .plans_box {
     margin-bottom: 26px;
@@ -4136,4 +4139,10 @@ gap: 0px 30px;
   .testimonial_section .logo img {
     height: 55.244px;
   }
+
+  
+    header .sidebar {
+        width: 282px;
+        right: -282px;
+    }
 }
