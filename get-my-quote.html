@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toco - Group Plans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+     <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <button type="button" class="btn-close" aria-label="Close" onclick="closeForm()"></button>
+                
+                <div class="logo">
+                    <a href="./index.html">
+                    <img src="./Images/toco-logo.svg" alt="logo" srcset="">
+                    </a>
+                </div>
+                
+                <!-- Back Button (only shows in substeps) -->
+                <div id="back-button-container" style="display: none;">
+                    <a href="#" id="back-button-link" class="text-decoration-none mb-3 d-inline-block" style="color: var(--toco-blue); font-size: 14px;">
+                        <i class="bi bi-arrow-left me-1"></i> <span id="back-button-text">Back</span>
+                    </a>
+                </div>
+                
+                <h2 class="auto-plans" id="page-title">Let's get you covered!</h2>
+                
+                <div class="row" style="--bs-gutter-x: 3.25rem;">
+                    <!-- Left Column: Nav Pills + Content -->
+                    <div class=" col-xl-8 col-lg-12" id="left-column">
+                        <!-- Navigation Pills -->
+                        <ul class="nav nav-pills flex-nowrap" id="nav-pills" style="overflow-x: auto;">
+                            <li class="nav-item">
+                                <a class="nav-link active" onclick="showStep('auto')" data-step="auto">
+                                    <div class="nav-item-icon">
+                                        <img src="./Images/ICONS/auto.svg" alt="" srcset="">
+                                    </div>
+                                    <div>Auto Plans</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="showStep('home')" data-step="home">
+                                    <div class="nav-item-icon">
+                                        <img src="./Images/ICONS/home.svg" alt="" srcset="">
+                                    </div>
+                                    <div>Home Warranty</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="showStep('group')" data-step="group">
+                                    <div class="nav-item-icon">
+                                        <img src="./Images/ICONS/Group plans.svg" alt="" srcset="">
+                                    </div>
+                                    <div>Group Plans</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="showStep('marine')" data-step="marine">
+                                    <div class="nav-item-icon">
+                                        <img src="./Images/ICONS/marine.svg" alt="" srcset="">
+                                    </div>
+                                    <div>Marine</div>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <!-- Content Area -->
+                        <div id="content-area">
+                            <!-- Auto Plans Step -->
+                            <div id="auto-step" class="step-content active">
+                                <form>
+                                    <div class="step-form-box">
+                                    <p>We need a few details about your car so we can prepare your quote.</p>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label class="form-label">Vehicle Make</label>
+                                            <select class="form-select" id="vehicle-make">
+                                                <option value="" selected>Select Manufacturer</option>
+                                                <option value="toyota">Toyota</option>
+                                                <option value="honda">Honda</option>
+                                                <option value="ford">Ford</option>
+                                                <option value="chevrolet">Chevrolet</option>
+                                                <option value="bmw">BMW</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label class="form-label">Vehicle Model</label>
+                                            <select class="form-select" id="vehicle-model">
+                                                <option value="" selected>Choose your Model</option>
+                                                <option value="model1">Model 1</option>
+                                                <option value="model2">Model 2</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row ">
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                 <label class="form-label">Vehicle Model Year</label>
+                                            <select class="form-select" id="vehicle-year">
+                                                <option value="" selected>Vehicle Model Year</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                 <label class="form-label">Current Vehicle Mileage</label>
+                                            <select class="form-select" id="vehicle-mileage">
+                                                <option value="" selected>Select Mileage</option>
+                                                <option value="0-25000">0-25,000 miles</option>
+                                                <option value="25001-50000">25,001-50,000 miles</option>
+                                                <option value="50001-75000">50,001-75,000 miles</option>
+                                                <option value="75001-100000">75,001-100,000 miles</option>
+                                                <option value="100000+">100,000+ miles</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="step-form-box">
+                                                <div class="field">
+                                                     <label class="form-label">ZIP Code</label>
+                                            <input type="text" style="color: #798DAD;" class="form-control mb-4" id="zip-code" placeholder="ZIP Code">
+                                            <p class="text-muted" style="font-size: 16px;">
+                                                 We ask for your ZIP code to confirm we can provide coverage in your area.</p>
+                                            </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <a href="#" class="text-decoration-none quote_num" style=" color: #4065D3; font-size: 18px;">
+                                            <span style="color: #140505">Already have a quote number?</span> <u>Click here</u>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <!-- Auto Step 2: Vehicle Questions -->
+                            <div id="auto2-step" class="step-content">
+                                <h2 class="" style="color: #002564; font-weight: 600; font-size: 40px; margin-bottom: 32px;">Great! We just need to know a few more details for your quote.</h2>
+                                <div class="step-form-box">
+                                <div class="mb-4 d-flex justify-content-between align-items-center">
+                                    <p class="mb-0" style="font-weight: 500; color: #212529;">Is your vehicle used for commercial purposes?</p>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn">Yes</button>
+                                        <button type="button" class="btn selected">No</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4 d-flex justify-content-between align-items-center">
+                                    <p class="mb-0" style="font-weight: 500; color: #212529;">Is your vehicle used for Ridesharing?</p>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn">Yes</button>
+                                        <button type="button" class="btn selected">No</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0" style="font-weight: 500; color: #212529;">Is your vehicle equipped with a fifth wheel or gooseneck trailer for towing?</p>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn">Yes</button>
+                                        <button type="button" class="btn selected">No</button>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="step-form-box">
+                                <h5 class="pb-0 mileage-card" style="color: var(--toco-navy); font-weight: 600;">Mileage</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0" style="font-weight: 600; color: #212529;">Has your odometer stopped working or been altered in any way?</p>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn">Yes</button>
+                                        <button type="button" class="btn selected">No</button>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="step-form-box">
+                                <h5 class="pb-0" style="color: var(--toco-navy); font-weight: 600;">Additional Details</h5>
+                                <div class="mb-4 d-flex justify-content-between align-items-center">
+                                    <p class="mb-0" style="font-weight: 600; color: #212529;">Does your vehicle have a mobility package?</p>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn">Yes</button>
+                                        <button type="button" class="btn selected">No</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4 d-flex justify-content-between align-items-center">
+                                    <p class="mb-0" style="font-weight: 600; color: #212529;">Does your vehicle have any modifications or a lift kit?</p>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn">Yes</button>
+                                        <button type="button" class="btn selected">No</button>
+                                    </div>
+                                </div>
+                                
+                                <div class=" d-flex justify-content-between align-items-center">
+                                    <p class="mb-0" style="font-weight: 600; color: #212529;">Has your vehicle ever been a total loss, salvaged, rebuilt, grey market or similarly title vehicle?</p>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn">Yes</button>
+                                        <button type="button" class="btn selected">No</button>
+                                    </div>
+                                </div>
+                                </div>
+
+
+
+                                
+                                <div class="mt-5 step-form-box">
+                                    <h5 class="mb-3 pb-0" style="color: var(--toco-navy); font-weight: 600;">Do you know your VIN number?</h5>
+                                    <input type="text" class="form-control mb-2" placeholder="VIN Number" style="max-width: 100%;">
+                                    <p class="text-muted zipcode" style="font-size: 13px;">Your VIN is not needed for an estimated quote, but is needed to complete your enrollment.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Auto Step 3: Personal Information -->
+                            <div id="auto3-step" class="step-content">
+                                <h2 class="mb-3" style="color: #212529; font-weight: 700;">We're almost there—let's get your Cadillac Catera covered!</h2>
+                                <p class="mb-4" style="color: #495057;">See what's included and get protected today. Drive with peace of mind while we handle the costly repairs — saving you thousands on unexpected bills.</p>
+                                
+                                <form>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">First Name</label>
+                                            <input type="text" class="form-control" placeholder="John">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" placeholder="Smith">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" placeholder="+1 (555) 123-4567">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" placeholder="your@email.com">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="disclaimer mb-4">
+                                        <p class="mb-2">
+                                            *Toco will never use your information to place robocalls to you for any reason. We will handle your personal information with the highest level of confidentiality. We will only contact you to provide the information you requested, with no pressure or obligation.
+                                        </p>
+                                        <p class="mb-0">
+                                            <strong>Legal Disclaimer:</strong> By clicking this link you are authorizing Toco to contact you by email, phone or text. If you purchase a plan from us, you are also authorizing us to contact you in conjunction with the normal course of administering your plan and/or for customer service requests with no automated calls. No Do Not Call registrations. You are not required to agree to this as a condition of purchase.
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <!-- Auto Step 4: Quote Ready -->
+                            <div id="auto4-step" class="step-content">
+                                <h2 class="mb-3" style="color: #212529; font-weight: 700;">John, your quote is ready!</h2>
+                                <p class="mb-4" style="color: #495057;">See what's included and get protected today. Drive with peace of mind while we handle the costly repairs — saving you thousands on unexpected bills.</p>
+                                
+                                <h5 class="mb-3" style="color: var(--toco-navy); font-weight: 600;">You'll get coverage on</h5>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-check-lg me-2" style="color: var(--toco-blue);"></i>Engine</li>
+                                            <li class="mb-2"><i class="bi bi-check-lg me-2" style="color: var(--toco-blue);"></i>Electrical</li>
+                                            <li class="mb-2"><i class="bi bi-check-lg me-2" style="color: var(--toco-blue);"></i>Fuel System</li>
+                                            <li class="mb-2"><i class="bi bi-check-lg me-2" style="color: var(--toco-blue);"></i>Technology & Modern Features</li>
+                                            <li class="mb-2"><i class="bi bi-check-lg me-2" style="color: var(--toco-blue);"></i>Cooling System</li>
+                                            <li class="mb-2"><i class="bi bi-check-lg me-2" style="color: var(--toco-blue);"></i>Air Conditioning</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-check-lg me-2" style="color: var(--toco-blue);"></i>Drive Axle</li>
+                                            <li class="mb-2"><i class="bi bi-check-lg me-2" style="color: var(--toco-blue);"></i>Cooling System</li>
+                                            <li class="mb-2"><i class="bi bi-check-lg me-2" style="color: var(--toco-blue);"></i>Transmission</li>
+                                            <li class="mb-2"><i class="bi bi-check-lg me-2" style="color: var(--toco-blue);"></i>Transfer Case</li>
+                                            <li class="mb-2"><i class="bi bi-check-lg me-2" style="color: var(--toco-blue);"></i>Turbo / Supercharger</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-5">
+                                    <h5 class="mb-4" style="color: var(--toco-navy); font-weight: 600;">How it works (and why it's so easy)</h5>
+                                    
+                                    <div class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <i class="bi bi-telephone-fill" style="font-size: 32px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600;">Car trouble? Call us.</h6>
+                                            <p style="font-size: 14px; color: #6C757D; margin: 0;">Check engine light? Strange noise? We're here for you. Our team will confirm what's covered and help you start a claim — no guesswork, no stress.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <i class="bi bi-wrench" style="font-size: 32px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600;">We'll handle the repair</h6>
+                                            <p style="font-size: 14px; color: #6C757D; margin: 0;">Choose any licensed mechanic, contractor, or marine tech you trust. Need a recommendation? We've got your back. We'll coordinate directly with them to approve the work — fast and hassle-free.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <i class="bi bi-credit-card" style="font-size: 32px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600;">Toco pays the bill</h6>
+                                            <p style="font-size: 14px; color: #6C757D; margin: 0;">Once the repair's authorized, you pay your deductible — and we cover the rest, directly. No reimbursements. No delays. Just peace of mind.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-5">
+                                    <h5 class="mb-4" style="color: var(--toco-navy); font-weight: 600;">Discover the exclusive benefits included in your plan</h5>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-laptop" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Free Openbay+ subscription</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Compare prices, book repairs online, and save up to 25% on maintenance.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-diagram-3" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Easy Online Management</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Manage your plan, file claims, and track service requests with our user-friendly online portal.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-calendar-check" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Month-to-month Coverage</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Our month-to-month flexible plans mean you get support without long-term commitments.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-award" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Award-Winning Concierge Team</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Get personalized assistance from our award-winning concierge team—ready to help anytime.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-hand-thumbs-up" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Hassle-Free Claims Process</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Simple, fast claims with dedicated support.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-shield-check" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Financial Protection</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Avoid paying out-of-pocket for expensive repairs.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-clock-history" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Reduced Repair Delays</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Quick approvals to get your home running again.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-person-check" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Your Choice of Service Technician</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Pick a trusted pro or use our certified network.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-check-circle" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Immediate Coverage Confirmation</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Get instant plan access and easy online management.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Auto Step 5: Payment -->
+                            <div id="auto5-step" class="step-content">
+                                <h2 class="mb-3" style="color: #212529; font-weight: 700;">You're one step away from getting premium coverage!</h2>
+                                <p class="mb-4" style="color: #495057;">To successfully proceed with your plan purchase, please complete with your financial information and start with your Toco Warranty protection today.</p>
+                                
+                                <h6 class="mb-3" style="color: var(--toco-navy); font-weight: 600;">Credit Card Details</h6>
+                                <form>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Full Name on Card</label>
+                                            <input type="text" class="form-control" placeholder="John Smith">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Credit Card Number</label>
+                                            <input type="text" class="form-control" placeholder="4597 5423 1657 4925">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <label class="form-label">CVV/CVC</label>
+                                            <input type="text" class="form-control" placeholder="Company Name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Expiration Date</label>
+                                            <input type="text" class="form-control" placeholder="MM/YY">
+                                        </div>
+                                    </div>
+                                    
+                                    <h6 class="mt-4 mb-3" style="color: var(--toco-navy); font-weight: 600;">Billing Address</h6>
+                                    <div class="row mb-3">
+                                        <div class="col-md-8">
+                                            <label class="form-label">Street Address</label>
+                                            <input type="text" class="form-control" placeholder="123 Main Street">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">Apt. / Unit (optional)</label>
+                                            <input type="text" class="form-control" placeholder="Apt. 4B">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-4">
+                                        <div class="col-md-4">
+                                            <label class="form-label">ZIP Code</label>
+                                            <input type="text" class="form-control" placeholder="ZIP Code">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">City</label>
+                                            <input type="text" class="form-control" placeholder="City">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">State</label>
+                                            <input type="text" class="form-control" placeholder="State">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="sameAddress">
+                                        <label class="form-check-label" for="sameAddress" style="color: var(--toco-blue); font-size: 14px;">
+                                            My mailing address is the same as my billing address.
+                                        </label>
+                                    </div>
+                                    
+                                    <h6 class="mt-4 mb-3" style="color: var(--toco-navy); font-weight: 600;">Mailing Address</h6>
+                                    <div class="row mb-3">
+                                        <div class="col-md-8">
+                                            <label class="form-label">Street Address</label>
+                                            <input type="text" class="form-control" placeholder="123 Main Street">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">Apt. / Unit (optional)</label>
+                                            <input type="text" class="form-control" placeholder="Apt. 4B">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-4">
+                                        <div class="col-md-4">
+                                            <label class="form-label">ZIP Code</label>
+                                            <input type="text" class="form-control" placeholder="ZIP Code">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">City</label>
+                                            <input type="text" class="form-control" placeholder="City">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">State</label>
+                                            <input type="text" class="form-control" placeholder="State">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-5 mb-3">
+                                        <h6 class="mb-3" style="color: var(--toco-navy); font-weight: 600;">To successfully process your subscription, we need your exact car mileage</h6>
+                                        <input type="text" class="form-control" placeholder="Exact Mileage" style="max-width: 100%;">
+                                    </div>
+                                    
+                                    <div class="mt-4 mb-3">
+                                        <h6 class="mb-3" style="color: var(--toco-navy); font-weight: 600;">VIN number</h6>
+                                        <input type="text" class="form-control" placeholder="VIN Number" style="max-width: 100%;">
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <!-- Auto Step 6: Confirmation -->
+                            <div id="auto6-step" class="step-content">
+                                <h2 class="mb-3" style="color: #212529; font-weight: 700;">Congratulations, John! You are now a member of Toco Warranty.</h2>
+                                <p class="mb-3" style="color: #495057;">Your payment has been successfully processed, and your Toco Warranty membership is now active. Expect an email confirmation shortly, outlining all the premium benefits you now have at your fingertips.</p>
+                                
+                                <p class="mb-4" style="color: #495057;">We're thrilled to welcome you to a new level of driving confidence, where every journey is supported by comprehensive coverage.</p>
+                                
+                                <p class="mb-5" style="color: var(--toco-blue); font-weight: 600;">
+                                    Drive with peace of mind. We got you covered.
+                                </p>
+                                
+                                <div class="mb-5">
+                                    <h5 class="mb-4" style="color: var(--toco-navy); font-weight: 600;">How it works (and why it's so easy)</h5>
+                                    
+                                    <div class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <i class="bi bi-telephone-fill" style="font-size: 32px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600;">Car trouble? Call us.</h6>
+                                            <p style="font-size: 14px; color: #6C757D; margin: 0;">Check engine light? Strange noise? We're here for you. Our team will confirm what's covered and help you start a claim — no guesswork, no stress.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <i class="bi bi-wrench" style="font-size: 32px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600;">We'll handle the repair</h6>
+                                            <p style="font-size: 14px; color: #6C757D; margin: 0;">Choose any licensed mechanic, contractor, or marine tech you trust. Need a recommendation? We've got your back. We'll coordinate directly with them to approve the work — fast and hassle-free.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <i class="bi bi-credit-card" style="font-size: 32px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600;">Toco pays the bill</h6>
+                                            <p style="font-size: 14px; color: #6C757D; margin: 0;">Once the repair's authorized, you pay your deductible — and we cover the rest, directly. No reimbursements. No delays. Just peace of mind.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-5">
+                                    <h5 class="mb-4" style="color: var(--toco-navy); font-weight: 600;">Discover the exclusive benefits included in your plan</h5>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-laptop" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Free Openbay+ subscription</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Compare prices, book repairs online, and save up to 25% on maintenance.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-diagram-3" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Easy Online Management</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Manage your plan, file claims, and track service requests with our user-friendly online portal.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-calendar-check" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Month-to-month Coverage</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Our month-to-month flexible plans mean you get support without long-term commitments.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-award" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Award-Winning Concierge Team</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Get personalized assistance from our award-winning concierge team—ready to help anytime.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-hand-thumbs-up" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Hassle-Free Claims Process</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Simple, fast claims with dedicated support.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-shield-check" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Financial Protection</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Avoid paying out-of-pocket for expensive repairs.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-clock-history" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Reduced Repair Delays</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Quick approvals to get your home running again.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-person-check" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Your Choice of Service Technician</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Pick a trusted pro or use our certified network.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-3">
+                                        <div class="me-3">
+                                            <i class="bi bi-check-circle" style="font-size: 28px; color: var(--toco-blue);"></i>
+                                        </div>
+                                        <div>
+                                            <h6 style="color: var(--toco-blue); font-weight: 600; margin-bottom: 4px;">Immediate Coverage Confirmation</h6>
+                                            <p style="font-size: 13px; color: #6C757D; margin: 0;">Get instant plan access and easy online management.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Home Warranty Step 1: Redirect Message -->
+                            <div id="home-step" class="step-content">
+                                <p>
+                                    Right now, our Home Warranty enrollment is handled through our trusted partners.
+                                    <br><br>
+                                    We’ll redirect you in a few seconds!
+                                    <br><br>
+                                    <a href="#" style="color: var(--Darker-accessible-blue, #4065D3);"> If it doesn’t happen automatically, click here to continue. </a> 
+                                </p>
+                            </div>
+                            
+                            <!-- Home Warranty Step 2: Detailed Form -->
+                            <div id="home2-step" class="step-content">
+                                <h2 class="mb-4" style="color: #212529; font-weight: 700;">First, please tell us about yourself</h2>
+                                
+                                <form>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">First Name</label>
+                                            <input type="text" class="form-control" placeholder="John" id="home-firstname">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" placeholder="Smith" id="home-lastname">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" placeholder="+1 (555) 123-4567" id="home-phone">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" placeholder="your@email.com" id="home-email">
+                                        </div>
+                                    </div>
+                                    
+                                    <h5 class="mb-3 mt-5" style="color: var(--toco-navy); font-weight: 600;">Which plan suits you best?</h5>
+                                    <div class="row mb-4">
+                                        <div class="col-md-4 mb-3 mb-md-0">
+                                            <button type="button" class="btn btn-outline-primary w-100 plan-btn" style="padding: 20px; border-radius: 12px; border: 2px solid #E9ECEF; background: white;" data-plan="silver">
+                                                <i class="bi bi-house-door d-block mb-2" style="font-size: 32px; color: var(--toco-blue);"></i>
+                                                <strong>Silver Protection Plan</strong>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-4 mb-3 mb-md-0">
+                                            <button type="button" class="btn btn-outline-primary w-100 plan-btn" style="padding: 20px; border-radius: 12px; border: 2px solid #E9ECEF; background: white;" data-plan="gold">
+                                                <i class="bi bi-house-door d-block mb-2" style="font-size: 32px; color: var(--toco-blue);"></i>
+                                                <strong>Gold Protection Plan</strong>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-4 mb-3 mb-md-0">
+                                            <button type="button" class="btn btn-outline-primary w-100 plan-btn" style="padding: 20px; border-radius: 12px; border: 2px solid #E9ECEF; background: white;" data-plan="platinum">
+                                                <i class="bi bi-house-door d-block mb-2" style="font-size: 32px; color: var(--toco-blue);"></i>
+                                                <strong>Platinum Protection Plan</strong>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <h5 class="mb-3 mt-5" style="color: var(--toco-navy); font-weight: 600;">What's your Home Address?</h5>
+                                    <div class="row mb-3">
+                                        <div class="col-md-8">
+                                            <label class="form-label">Street Address</label>
+                                            <input type="text" class="form-control" placeholder="123 Main Street" id="home-street">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">Apt. / Unit (optional)</label>
+                                            <input type="text" class="form-control" placeholder="Apt. 4B" id="home-apt">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-4">
+                                        <div class="col-md-4">
+                                            <label class="form-label">ZIP Code</label>
+                                            <input type="text" class="form-control" placeholder="ZIP Code" id="home-zip">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">City</label>
+                                            <input type="text" class="form-control" placeholder="City" id="home-city">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">State</label>
+                                            <select class="form-select" id="home-state">
+                                                <option value="">State</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <!-- Add more states as needed -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <!-- Home Warranty Step 3: Quote Display (Placeholder) -->
+                            <div id="home3-step" class="step-content">
+                                <h2 class="mb-3" style="color: #212529; font-weight: 700;">Your Home Warranty quote is ready!</h2>
+                                <p class="mb-4" style="color: #495057;">Review your coverage details below.</p>
+                                <p class="text-muted">Home Step 3 content - to be designed</p>
+                            </div>
+                            
+                            <!-- Home Warranty Step 4: Payment (Placeholder) -->
+                            <div id="home4-step" class="step-content">
+                                <h2 class="mb-3" style="color: #212529; font-weight: 700;">Complete your payment</h2>
+                                <p class="mb-4" style="color: #495057;">Enter your payment details below.</p>
+                                <p class="text-muted">Home Step 4 content - to be designed</p>
+                            </div>
+                            
+                            <!-- Home Warranty Step 5: Confirmation (Placeholder) -->
+                            <div id="home5-step" class="step-content">
+                                <h2 class="mb-3" style="color: #212529; font-weight: 700;">Congratulations! Your home is now covered.</h2>
+                                <p class="mb-4" style="color: #495057;">Thank you for choosing Toco Home Warranty.</p>
+                                <p class="text-muted">Home Step 5 content - to be designed</p>
+                            </div>
+                            
+                            <!-- Group Plans Step -->
+                            <div id="group-step" class="step-content">
+                                <p>
+                                    For our Group Plans, the best way to explore options is through a live demo. That way, we can show you exactly how the Work Benefit fits your team. Share your info below and we'll be in touch to schedule a time.
+                                </p>
+                                
+                                <form>
+                                    <div class="step-form-box">
+                                        <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" placeholder="John Smith">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label class="form-label">Company Name</label>
+                                                <input type="text" class="form-control" placeholder="Company Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label class="form-label">Email Address</label>
+                                                <input type="email" class="form-control" placeholder="name@company.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label class="form-label">Phone Number</label>
+                                                <input type="tel" class="form-control" placeholder="+1 (555) 123-4567">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="disclaimer">
+                                        <p>
+                                            *Toco will never use your information to place robocalls to you for any reason. We will handle your personal information with the highest level of confidentiality. We will only contact you to provide the information you requested, with no pressure or obligation.
+                                            <br><br>
+                                           <span style="font-weight: 500;"> Legal Disclaimer: </span> By clicking this link you are authorizing Toco to contact you by email, phone or text. If you purchase a plan from us, you are also authorizing us to contact you in conjunction with the normal course of administering your plan and Toco's products and services. This permission supersedes all Do Not Call registrations. You are not required to agree to this as a condition of purchase.
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <!-- Marine Step -->
+                            <div id="marine-step" class="step-content">
+                                <p>
+                                   Whether it’s a weekend escape or a long voyage, your time on the water is priceless. Our upcoming marine coverage will help keep you out there, doing what you love most.
+                                </p>
+
+                                <div class="step-form-box">
+                                    <p style="color: #002564; font-weight: 600;">
+                                        Join the waitlist and be the first to know when we launch!
+                                    </p>
+                                    <div class="input_group">
+                                         <div class="field w-100 m-0">
+                                        <label class="form-label">Email</label>
+                                                <input type="email" class="form-control" placeholder="your@email.com">
+                                        </div>
+                                         <button type="submit" class="btn" style="width: 250px; max-width: 100%;">
+                                        Join the Waitlist
+                                        <i class="bi bi-arrow-right ms-2"></i>
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Images -->
+                    <div class=" col-xl-4 col-lg-12 col-reverse">
+                        <div class="d-flex flex-column align-items-center justify-content-start h-100 mt-3 mt-md-0">
+                            <!-- Auto Plans Image -->
+                            <div id="auto-image" class="step-image active">
+                                <img src="./Images/Ilustración de individual 2.png" 
+                                     alt="Person in car" 
+                                     class="hero-image">
+                                <button type="button" id="continue-btn" class="btn rounded-pill w-100 btn-primary" disabled onclick="showAutoStep('auto2')">
+                                    Fill the form to continue
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                            
+                            <!-- Auto 2-6 Vehicle Summary Cards -->
+                            <div id="auto2-image" class="step-image">
+                                <div class="card mb-3" style="color: white; border-radius: 16px; max-width: 100%;">
+                                    <div class="card-body p-4">
+                                        <h5 class="" style="font-weight: 600; border-bottom: 1px solid #AEAEAE;">Cadillac Catera</h5>
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <span class="card-year">Year</span>
+                                            <strong class="card-number">2019</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="card-year">Mileage</span>
+                                            <strong class="card-number">50,001-75,000</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-lg rounded-pill w-100" onclick="showAutoStep('auto3')" style="max-width: 100%;">
+                                    Continue
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                            
+                            <div id="auto3-image" class="step-image">
+                                <div class="card mb-3" style="background: linear-gradient(135deg, var(--toco-blue) 0%, #4a6ae8 100%); color: white; border-radius: 16px; max-width: 280px;">
+                                    <div class="card-body p-4">
+                                        <h5 class="mb-3" style="font-weight: 700;">Cadillac Catera</h5>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span>Year</span>
+                                            <strong>2019</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span>Mileage</span>
+                                            <strong>50,001-75,000</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-check mb-3" style="max-width: 280px;">
+                                    <input class="form-check-input" type="checkbox" id="terms-auto3">
+                                    <label class="form-check-label" for="terms-auto3" style="font-size: 13px;">
+                                        To proceed, please accept the <a href="#" style="color: var(--toco-blue);">Terms & Conditions.</a>
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-lg rounded-pill w-100" onclick="showAutoStep('auto4')" style="max-width: 280px;">
+                                    See my quote
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                            
+                            <div id="auto4-image" class="step-image">
+                                <div class="card mb-3" style="background: linear-gradient(135deg, var(--toco-blue) 0%, #4a6ae8 100%); color: white; border-radius: 16px; max-width: 280px;">
+                                    <div class="card-body p-4">
+                                        <h5 class="mb-3" style="font-weight: 700;">Cadillac Catera</h5>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span>Year</span>
+                                            <strong>2019</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span>Mileage</span>
+                                            <strong>50,001-75,000</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <span>Maximum Deductible</span>
+                                            <strong>$100</strong>
+                                        </div>
+                                        <hr style="border-color: rgba(255,255,255,0.3);">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <small style="font-size: 12px;">Monthly Payment</small><br>
+                                                <small style="font-size: 11px;">(with taxes)</small>
+                                            </div>
+                                            <h3 class="mb-0" style="font-weight: 700;">$217.38</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3" style="max-width: 280px;">
+                                    <p class="mb-2" style="font-size: 14px; font-weight: 600; color: var(--toco-navy);">Do you have a promo code?</p>
+                                    <div class="d-flex gap-2">
+                                        <input type="text" class="form-control" placeholder="Promo code" style="border-radius: 8px;">
+                                        <button class="btn btn-primary" style="padding: 8px 16px; border-radius: 8px;">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <button type="button" class="btn btn-primary btn-lg w-100 mb-3" onclick="showAutoStep('auto5')" style="max-width: 280px; font-weight: 600; border-radius: 25px;">
+                                    Proceed to Checkout
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                                
+                                <div class="text-center" style="max-width: 280px;">
+                                    <div class="d-flex align-items-center justify-content-center mb-2">
+                                        <i class="bi bi-person-circle me-2" style="font-size: 24px; color: var(--toco-navy);"></i>
+                                        <div class="text-start">
+                                            <p class="mb-0" style="font-size: 14px; font-weight: 600; color: var(--toco-blue);">Need help? We're here for you.</p>
+                                            <p class="mb-0" style="font-size: 12px; color: #6C757D;">Our award-winning team will reach out.</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" style="color: var(--toco-blue); font-size: 13px; text-decoration: none;">Get personalized assistance</a>
+                                </div>
+                            </div>
+                            
+                            <div id="auto5-image" class="step-image">
+                                <div class="card mb-3" style="background: linear-gradient(135deg, var(--toco-blue) 0%, #4a6ae8 100%); color: white; border-radius: 16px; max-width: 280px;">
+                                    <div class="card-body p-4">
+                                        <h5 class="mb-3" style="font-weight: 700;">Cadillac Catera</h5>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span>Year</span>
+                                            <strong>2019</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span>Mileage</span>
+                                            <strong>50,001-75,000</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <span>Maximum Deductible</span>
+                                            <strong>$100</strong>
+                                        </div>
+                                        <hr style="border-color: rgba(255,255,255,0.3);">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <small style="font-size: 12px;">Monthly Payment</small><br>
+                                                <small style="font-size: 11px;">(with taxes)</small>
+                                            </div>
+                                            <h3 class="mb-0" style="font-weight: 700;">$217.38</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button type="button" class="btn btn-primary btn-lg w-100 mb-2" onclick="showAutoStep('auto6')" style="max-width: 280px; font-weight: 600; border-radius: 25px;">
+                                    <i class="bi bi-lock me-2"></i>Complete my enrollment
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                                
+                                <p class="text-center mb-4" style="font-size: 12px; color: #6C757D; font-style: italic; max-width: 280px;">
+                                    No strings attached. Cancel anytime.
+                                </p>
+                                
+                                <div class="text-center" style="max-width: 280px;">
+                                    <div class="d-flex align-items-center justify-content-center mb-2">
+                                        <i class="bi bi-person-circle me-2" style="font-size: 24px; color: var(--toco-navy);"></i>
+                                        <div class="text-start">
+                                            <p class="mb-0" style="font-size: 14px; font-weight: 600; color: var(--toco-blue);">Need help? We're here for you.</p>
+                                            <p class="mb-0" style="font-size: 12px; color: #6C757D;">Our award-winning team will reach out.</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" style="color: var(--toco-blue); font-size: 13px; text-decoration: none;">Get personalized assistance</a>
+                                </div>
+                            </div>
+                            
+                            <div id="auto6-image" class="step-image">
+                                <div class="card mb-3" style="background: linear-gradient(135deg, var(--toco-blue) 0%, #4a6ae8 100%); color: white; border-radius: 16px; max-width: 280px; position: relative; overflow: hidden;">
+                                    <!-- Green COVERED ribbon badge -->
+                                    <div class="position-absolute" style="top: 20px; right: -35px; background: #28a745; color: white; font-weight: 700; font-size: 12px; padding: 8px 45px; transform: rotate(45deg); box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+                                        COVERED
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <h5 class="mb-2" style="font-weight: 700; font-size: 20px;">Cadillac Catera</h5>
+                                        <p class="mb-4" style="font-size: 14px; opacity: 0.9;">2019 | 50,001-75,000 miles</p>
+                                        
+                                        <h6 class="mb-3" style="font-size: 15px; font-weight: 600;">Your coverage includes:</h6>
+                                        <ul class="list-unstyled mb-0" style="font-size: 14px; line-height: 2;">
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Engine</li>
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Drive Axle</li>
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Electrical</li>
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Cooling System</li>
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Fuel System</li>
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Transmission</li>
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Technology & Modern Features</li>
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Transfer Case</li>
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Cooling System</li>
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Turbo / Supercharger</li>
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Air Conditioning</li>
+                                            <li class="mb-1"><i class="bi bi-check-lg me-2"></i>Exclusive Member Benefits</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <!-- Transaction ID outside card -->
+                                <p class="text-center mb-3" style="font-size: 13px; color: #6C757D; max-width: 280px;">
+                                    Transaction ID #00298312
+                                </p>
+                                
+                                <!-- Discover link outside card -->
+                                <div class="text-center" style="max-width: 280px;">
+                                    <a href="#" class="text-decoration-none" style="color: var(--toco-blue); font-size: 15px; font-weight: 600;">
+                                        Discover my Member Portal 
+                                        <i class="bi bi-arrow-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Home Warranty Image -->
+                            <div id="home-image" class="step-image">
+                                <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=600" 
+                                     alt="Family at home" 
+                                     class="hero-image">
+                                <button type="button" class="btn rounded-pill w-100" onclick="showHomeStep('home2')">
+                                    Continue my Enrollment
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                            
+                            <!-- Home Step 2 Image -->
+                            <div id="home2-image" class="step-image">
+                                <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=600" 
+                                     alt="Family at home" 
+                                     class="hero-image mb-3">
+                                <button type="button" id="home-continue-btn" class="btn btn-light w-100" disabled style="max-width: 280px; color: #C8CCD0; border: 1px solid #E9ECEF; padding: 12px 20px; font-size: 14px;">
+                                    Fill the form to continue
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                            
+                            <!-- Home Step 3 Image -->
+                            <div id="home3-image" class="step-image">
+                                <div class="card" style="background: linear-gradient(135deg, var(--toco-blue) 0%, #4a6ae8 100%); color: white; border-radius: 16px; max-width: 280px;">
+                                    <div class="card-body p-4">
+                                        <h5 class="mb-3" style="font-weight: 700;">Home Warranty Quote</h5>
+                                        <p class="mb-0" style="font-size: 14px;">Quote details placeholder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Home Step 4 Image -->
+                            <div id="home4-image" class="step-image">
+                                <div class="card" style="background: linear-gradient(135deg, var(--toco-blue) 0%, #4a6ae8 100%); color: white; border-radius: 16px; max-width: 280px;">
+                                    <div class="card-body p-4">
+                                        <h5 class="mb-3" style="font-weight: 700;">Payment</h5>
+                                        <p class="mb-0" style="font-size: 14px;">Payment placeholder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Home Step 5 Image -->
+                            <div id="home5-image" class="step-image">
+                                <div class="card" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; border-radius: 16px; max-width: 280px;">
+                                    <div class="card-body p-4">
+                                        <h5 class="mb-3" style="font-weight: 700;">Confirmation</h5>
+                                        <p class="mb-0" style="font-size: 14px;">Success placeholder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Group Plans Image -->
+                            <div id="group-image" class="step-image">
+                                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600" 
+                                     alt="Business professional" 
+                                     class="hero-image">
+                                <button type="button" class="btn rounded-pill w-100" onclick="goToNextStep('group')">
+                                    Book my demo
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                            
+                            <!-- Marine Image -->
+                            <div id="marine-image" class="step-image mt-0">
+                                <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" 
+                                     alt="Couple on boat" 
+                                     class="hero-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trust Badges Section (Only for Auto4) -->
+                <div id="trust-badges-section" style="display: none;">
+                    <div class="mt-5 pt-4" style="border-top: 1px solid #E9ECEF;">
+                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-3 mb-5">
+                            <!-- Left side: Title and description -->
+                            <div style="flex: 1;">
+                                <h4 class="mb-2" style="color: var(--toco-navy); font-weight: 600;">Toco is the most trusted consumer choice</h4>
+                                <p class="mb-0" style="color: #6C757D; font-size: 14px;">We help people handle the unexpected — fast, fair, and stress-free.</p>
+                            </div>
+                            
+                            <!-- Right side: Logos with stars inline -->
+                            <div class="d-flex gap-3 align-items-start flex-shrink-0">
+                                <div class="text-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Better_Business_Bureau_logo.svg" alt="BBB" style="height: 35px; margin-bottom: 6px;">
+                                    <div>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Trustpilot_Logo_%282022%29.svg" alt="Trustpilot" style="height: 35px; margin-bottom: 6px;">
+                                    <div>
+                                        <i class="bi bi-star-fill" style="color: #00b67a; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #00b67a; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #00b67a; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #00b67a; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #00b67a; font-size: 12px;"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="height: 35px; margin-bottom: 6px;">
+                                    <div>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-half" style="color: #ffa500; font-size: 12px;"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div style="height: 35px; margin-bottom: 6px; display: flex; align-items: center; font-weight: 700; color: #4169E1; font-size: 13px;">
+                                        CONSUMERAFFAIRS
+                                    </div>
+                                    <div>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-fill" style="color: #ffa500; font-size: 12px;"></i>
+                                        <i class="bi bi-star-half" style="color: #ffa500; font-size: 12px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonials Carousel -->
+                        <div class="testimonials-carousel" style="overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none;">
+                            <div class="d-flex gap-3" style="min-width: min-content; padding-bottom: 10px;">
+                                <div class="testimonial-card" style="min-width: 320px; max-width: 320px;">
+                                    <div class="p-4" style="background: white; border-radius: 12px; height: 100%; border: 1px solid #E9ECEF;">
+                                        <div class="mb-3" style="font-size: 40px; color: var(--toco-blue); line-height: 1;">"</div>
+                                        <p style="font-size: 14px; color: #495057; line-height: 1.6; margin-bottom: 20px;">I was online updating my payment information and had some questions pop up. I had a great experience and they were AWESOME. They have paid out thousands without any hesitation. I had to jump on the Home Coverage due to them being on top of my vehicle coverage. This company kicks butt and I recommend them to anyone.</p>
+                                        <p class="mb-0" style="font-size: 13px; color: #6C757D;"><strong>Daniel N.</strong> - Richmond, VA</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="testimonial-card" style="min-width: 320px; max-width: 320px;">
+                                    <div class="p-4" style="background: white; border-radius: 12px; height: 100%; border: 1px solid #E9ECEF;">
+                                        <div class="mb-3" style="font-size: 40px; color: var(--toco-blue); line-height: 1;">"</div>
+                                        <p style="font-size: 14px; color: #495057; line-height: 1.6; margin-bottom: 20px;">I had to file a claim for a repair and was pleasantly surprised by how smooth the process was. The repair shop was able to communicate directly with Toco Warranty, which saved me time and hassle. The claim was approved quickly, and I was able to get my car back on the road without any issues.</p>
+                                        <p class="mb-0" style="font-size: 13px; color: #6C757D;"><strong>Cora K.</strong> - Washington, DC</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="testimonial-card" style="min-width: 320px; max-width: 320px;">
+                                    <div class="p-4" style="background: white; border-radius: 12px; height: 100%; border: 1px solid #E9ECEF;">
+                                        <div class="mb-3" style="font-size: 40px; color: var(--toco-blue); line-height: 1;">"</div>
+                                        <p style="font-size: 14px; color: #495057; line-height: 1.6; margin-bottom: 20px;">The representative was awesome!! He gave me a really good discount for my car! This dude insaid get a raise!!! GIVE THIS MAN A RAISE! He knows what us blue collar folks are going through as far as finance goes!</p>
+                                        <p class="mb-0" style="font-size: 13px; color: #6C757D;"><strong>Amber G.</strong> - Bloxom, VA</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="testimonial-card" style="min-width: 320px; max-width: 320px;">
+                                    <div class="p-4" style="background: white; border-radius: 12px; height: 100%; border: 1px solid #E9ECEF;">
+                                        <div class="mb-3" style="font-size: 40px; color: var(--toco-blue); line-height: 1;">"</div>
+                                        <p style="font-size: 14px; color: #495057; line-height: 1.6; margin-bottom: 20px;">I was looking for warranty coverage, up 5 best companies and researched. I see why, the customer service representative explained everything clearly. I would definitely recommend them for an affordable vehicle warranty.</p>
+                                        <p class="mb-0" style="font-size: 13px; color: #6C757D;"><strong>J. B.</strong> - Houston, TX</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <style>
+                            .testimonials-carousel::-webkit-scrollbar {
+                                display: none;
+                            }
+                            .testimonial-card {
+                                flex-shrink: 0;
+                            }
+                        </style>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const titles = {
+            'auto': "Let's get you covered!",
+            'auto2': "Great! We just need to know a few more details for your quote.",
+            'auto3': "We're almost there—let's get your Cadillac Catera covered!",
+            'auto4': "John, your quote is ready!",
+            'auto5': "You're one step away from getting premium coverage!",
+            'auto6': "Congratulations, John! You are now a member of Toco Warranty.",
+            'home': "Let's get your home covered!",
+            'group': "Discover our Work Benefit for your team",
+            'marine': "Marine coverage is setting sail soon!"
+        };
+        
+        const stepOrder = ['auto', 'home', 'group', 'marine'];
+        
+        function showStep(step) {
+            // Hide all steps
+            document.querySelectorAll('.step-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Hide all images
+            document.querySelectorAll('.step-image').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show selected step
+            document.getElementById(step + '-step').classList.add('active');
+            
+            // Show selected image
+            document.getElementById(step + '-image').classList.add('active');
+            
+            // Update nav active state
+            document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.querySelector(`[data-step="${step}"]`).classList.add('active');
+            
+            // Show main title for main steps
+            const mainTitle = document.getElementById('page-title');
+            mainTitle.style.display = 'block';
+            mainTitle.textContent = titles[step];
+            
+            // Hide trust badges for main steps
+            const trustBadges = document.getElementById('trust-badges-section');
+            trustBadges.style.display = 'none';
+            
+            // Show nav pills for main steps
+            const navPills = document.getElementById('nav-pills');
+            navPills.style.display = 'flex';
+            
+            // Hide back button for main steps
+            const backBtnContainer = document.getElementById('back-button-container');
+            backBtnContainer.style.display = 'none';
+            
+            // Show close button
+            const closeBtn = document.querySelector('.btn-close');
+            closeBtn.style.display = 'block';
+        }
+        
+        function showAutoStep(step) {
+            // Hide all steps
+            document.querySelectorAll('.step-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Hide all images
+            document.querySelectorAll('.step-image').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show selected step
+            document.getElementById(step + '-step').classList.add('active');
+            
+            // Show selected image
+            document.getElementById(step + '-image').classList.add('active');
+            
+            // Hide main title for substeps, show substep titles instead
+            const mainTitle = document.getElementById('page-title');
+            mainTitle.style.display = 'none';
+            
+            // Show/hide trust badges section (only for auto4)
+            const trustBadges = document.getElementById('trust-badges-section');
+            if (step === 'auto4') {
+                trustBadges.style.display = 'block';
+            } else {
+                trustBadges.style.display = 'none';
+            }
+            
+            // Hide nav pills for auto substeps (auto2-auto6)
+            const navPills = document.getElementById('nav-pills');
+            if (step !== 'auto' && step.startsWith('auto')) {
+                navPills.style.display = 'none';
+            } else {
+                navPills.style.display = 'flex';
+            }
+            
+            // Handle back button
+            const backBtnContainer = document.getElementById('back-button-container');
+            const backBtnLink = document.getElementById('back-button-link');
+            const backBtnText = document.getElementById('back-button-text');
+            
+            const backButtonConfig = {
+                'auto2': { show: true, text: 'Back to Vehicle Info', target: 'auto' },
+                'auto3': { show: true, text: 'Back to Vehicle Questions', target: 'auto2' },
+                'auto4': { show: true, text: 'Back to my quote', target: 'auto3' },
+                'auto5': { show: true, text: 'Back to my quote', target: 'auto4' },
+                'auto6': { show: true, text: 'Back to payment', target: 'auto5' }
+            };
+            
+            if (backButtonConfig[step]) {
+                const config = backButtonConfig[step];
+                if (config.show) {
+                    backBtnContainer.style.display = 'block';
+                    backBtnText.textContent = config.text;
+                    backBtnLink.onclick = function(e) {
+                        e.preventDefault();
+                        showAutoStep(config.target);
+                        return false;
+                    };
+                } else {
+                    backBtnContainer.style.display = 'none';
+                }
+            } else {
+                backBtnContainer.style.display = 'none';
+            }
+            
+            // Close button always visible for auto substeps
+            const closeBtn = document.querySelector('.btn-close');
+            closeBtn.style.display = 'block';
+            
+            // Scroll to top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function showHomeStep(step) {
+            // Hide all steps
+            document.querySelectorAll('.step-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Hide all images
+            document.querySelectorAll('.step-image').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show selected step
+            document.getElementById(step + '-step').classList.add('active');
+            
+            // Show selected image
+            document.getElementById(step + '-image').classList.add('active');
+            
+            // Handle main title and nav pills visibility
+            const mainTitle = document.getElementById('page-title');
+            const navPills = document.getElementById('nav-pills');
+            
+            if (step === 'home' || step === 'home2') {
+                // First and second home steps - show nav pills and title
+                mainTitle.style.display = 'block';
+                mainTitle.textContent = "Let's get your home covered!";
+                navPills.style.display = 'flex';
+            } else {
+                // Home substeps (home3+) - hide nav pills and main title
+                mainTitle.style.display = 'none';
+                navPills.style.display = 'none';
+            }
+            
+            // Handle back button for home substeps
+            const backBtnContainer = document.getElementById('back-button-container');
+            const backBtnLink = document.getElementById('back-button-link');
+            const backBtnText = document.getElementById('back-button-text');
+            
+            const backButtonConfig = {
+                'home2': { show: true, text: 'Back to Home Warranty', target: 'home' },
+                'home3': { show: true, text: 'Back to my quote', target: 'home2' },
+                'home4': { show: true, text: 'Back to my quote', target: 'home3' },
+                'home5': { show: true, text: 'Back to payment', target: 'home4' }
+            };
+            
+            if (backButtonConfig[step]) {
+                const config = backButtonConfig[step];
+                if (config.show) {
+                    backBtnContainer.style.display = 'block';
+                    backBtnText.textContent = config.text;
+                    backBtnLink.onclick = function(e) {
+                        e.preventDefault();
+                        if (config.target === 'home') {
+                            showStep('home'); // Go back to main home step
+                        } else {
+                            showHomeStep(config.target);
+                        }
+                        return false;
+                    };
+                } else {
+                    backBtnContainer.style.display = 'none';
+                }
+            } else {
+                backBtnContainer.style.display = 'none';
+            }
+            
+            // Close button always visible for home substeps
+            const closeBtn = document.querySelector('.btn-close');
+            closeBtn.style.display = 'block';
+            
+            // Scroll to top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function goToNextStep(currentStep) {
+            const currentIndex = stepOrder.indexOf(currentStep);
+            if (currentIndex < stepOrder.length - 1) {
+                const nextStep = stepOrder[currentIndex + 1];
+                showStep(nextStep);
+                // Scroll to top smoothly
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+        
+        // Auto form validation
+        function validateAutoForm() {
+            const make = document.getElementById('vehicle-make').value;
+            const model = document.getElementById('vehicle-model').value;
+            const year = document.getElementById('vehicle-year').value;
+            const mileage = document.getElementById('vehicle-mileage').value;
+            const zip = document.getElementById('zip-code').value;
+            
+            const continueBtn = document.getElementById('continue-btn');
+            
+            if (make && model && year && mileage && zip) {
+                continueBtn.disabled = false;
+                continueBtn.classList.remove('btn-light');
+                continueBtn.classList.add('btn-primary');
+                continueBtn.style.color = 'white';
+            } else {
+                continueBtn.disabled = true;
+                continueBtn.classList.remove('btn-primary');
+                continueBtn.classList.add('btn-light');
+                continueBtn.style.color = '#C8CCD0';
+            }
+        }
+        
+        // Home form validation
+        function validateHomeForm() {
+            const firstname = document.getElementById('home-firstname').value;
+            const lastname = document.getElementById('home-lastname').value;
+            const phone = document.getElementById('home-phone').value;
+            const email = document.getElementById('home-email').value;
+            const street = document.getElementById('home-street').value;
+            const zip = document.getElementById('home-zip').value;
+            const city = document.getElementById('home-city').value;
+            const state = document.getElementById('home-state').value;
+            
+            // Check if a plan is selected
+            const planSelected = document.querySelector('.plan-btn.selected') !== null;
+            
+            const continueBtn = document.getElementById('home-continue-btn');
+            
+            if (firstname && lastname && phone && email && street && zip && city && state && planSelected) {
+                continueBtn.disabled = false;
+                continueBtn.classList.remove('btn-light');
+                continueBtn.classList.add('btn-primary', 'btn-lg', 'rounded-pill');
+                continueBtn.style.color = 'white';
+                continueBtn.style.border = '';
+                continueBtn.style.padding = '';
+                continueBtn.textContent = 'Continue my Enrollment';
+                continueBtn.innerHTML = 'Continue my Enrollment <i class="bi bi-arrow-right ms-2"></i>';
+                continueBtn.onclick = function() { showHomeStep('home3'); };
+            } else {
+                continueBtn.disabled = true;
+                continueBtn.classList.remove('btn-primary', 'btn-lg', 'rounded-pill');
+                continueBtn.classList.add('btn-light');
+                continueBtn.style.color = '#C8CCD0';
+                continueBtn.style.border = '1px solid #E9ECEF';
+                continueBtn.style.padding = '12px 20px';
+                continueBtn.innerHTML = 'Fill the form to continue <i class="bi bi-arrow-right ms-2"></i>';
+            }
+        }
+        
+        // Add event listeners when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const formFields = ['vehicle-make', 'vehicle-model', 'vehicle-year', 'vehicle-mileage', 'zip-code'];
+            formFields.forEach(fieldId => {
+                const field = document.getElementById(fieldId);
+                if (field) {
+                    field.addEventListener('change', validateAutoForm);
+                    field.addEventListener('input', validateAutoForm);
+                }
+            });
+            
+            // Home form validation listeners
+            const homeFormFields = ['home-firstname', 'home-lastname', 'home-phone', 'home-email', 'home-street', 'home-zip', 'home-city', 'home-state'];
+            homeFormFields.forEach(fieldId => {
+                const field = document.getElementById(fieldId);
+                if (field) {
+                    field.addEventListener('change', validateHomeForm);
+                    field.addEventListener('input', validateHomeForm);
+                }
+            });
+            
+            // Plan button selection
+            document.querySelectorAll('.plan-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove selected from all plan buttons
+                    document.querySelectorAll('.plan-btn').forEach(b => {
+                        b.classList.remove('selected');
+                        b.style.border = '2px solid #E9ECEF';
+                        b.style.background = 'white';
+                    });
+                    
+                    // Add selected to clicked button
+                    this.classList.add('selected');
+                    this.style.border = '2px solid var(--toco-blue)';
+                    this.style.background = '#F0F7FF';
+                    
+                    // Validate form
+                    validateHomeForm();
+                });
+            });
+            
+            // Add Yes/No button interaction
+            document.addEventListener('click', function(e) {
+                if (e.target.closest('.btn-group .btn')) {
+                    const clickedBtn = e.target.closest('.btn');
+                    const btnGroup = clickedBtn.closest('.btn-group');
+                    
+                    // Remove selected class from all buttons in this group
+                    btnGroup.querySelectorAll('.btn').forEach(btn => {
+                        btn.classList.remove('selected');
+                    });
+                    
+                    // Add selected class to clicked button
+                    clickedBtn.classList.add('selected');
+                }
+            });
+        });
+        
+        // Close form function
+        function closeForm() {
+            // Option 1: Hide the entire form
+            // document.querySelector('.card').style.display = 'none';
+            
+            // Option 2: Reload the page to reset
+            // window.location.reload();
+            
+            // Option 3: Go back to first step
+            showStep('auto');
+            
+            // Option 4: Close window (if opened in popup)
+            // window.close();
+            
+            // For now, using option 3 - reset to first step
+            // You can uncomment other options based on desired behavior
+        }
+    </script>
+</body>
+</html>
