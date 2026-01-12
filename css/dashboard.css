@@ -270,7 +270,7 @@ a.text-decoration-none {
   font-weight: 500;
 }
 /* Disabled state (gray) */
-#continue-btn:disabled, #continue-btn {
+#continue-btn:disabled, #continue-btn , #home-continue-btn:disabled ,  #home-continue-btn{
     color: #c2c2c2 !important;
     border: 1px solid #e7ecf3 !important;
     cursor: not-allowed;
@@ -297,13 +297,13 @@ div#home-step p {
 }
 
 /* Enabled state (blue) */
-#continue-btn:not(:disabled).btn-primary {
+#continue-btn:not(:disabled).btn-primary , #home-continue-btn:not(:disabled) {
   background: #4065d3 !important;
   color: #ffffff !important;
   border: 1px solid #4065d3 !important;
   cursor: pointer;
 }
-#group-step p , div#marine-step p , #auto3-step p {
+#group-step p , div#marine-step p , #auto3-step p , p.sub_title {
     color: #140505;
     font-size: 18px;
     font-weight: 500;
@@ -380,6 +380,184 @@ a#back-button-link {
     background-color: #4065D3;
     border: 1px solid #4065D3;
 }
+
+
+/* Container Styling */
+.plan_selection_section {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  /* Optional: Box shadow similar to your other sections */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03); 
+}
+
+.plan_selection_section h3 {
+  color: var(--black-dark); /* #140505 */
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Grid Layout for Cards */
+.plans_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* --- Card Styles --- */
+.plan_card {
+  position: relative;
+  cursor: pointer;
+  margin: 0; /* Reset default label margin */
+}
+
+/* Hide the actual Radio Button */
+.plan_card input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The Visible Card Content */
+.card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 20px 17px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 37, 100, 0.10);
+    background: #FAFBFF;
+}
+
+/* Top Row (Icon + Checkbox) */
+.top_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* House Icon Circle */
+.house_icon {
+  width: 50px;
+    height: 50px;
+  background-color: #EBF2FF; /* Light Blue BG */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Check Circle (Hidden by default) */
+.check_circle {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-blue); /* #4065d3 */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Hidden initially */
+  transform: scale(0.5);
+  transition: all 0.2s ease;
+}
+
+/* Plan Name Text */
+.plan_name {
+    color: var(--Darker-accessible-blue, #4065D3);
+    font-size: 15.625px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* --- Active State (When Clicked/Checked) --- */
+
+/* Change Border Color */
+.plan_card input:checked + .card_content {
+  border: 2px solid var(--primary-blue);
+  box-shadow: 0 4px 12px rgba(64, 101, 211, 0.1);
+}
+
+/* Show Check Icon */
+.plan_card input:checked + .card_content .check_circle {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.plan_card input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* --- Active State (When Clicked/Checked) --- */
+
+/* Change Border Color */
+.plan_card input:checked + .card_content {
+  border: 2px solid var(--primary-blue);
+  box-shadow: 0 4px 12px rgba(64, 101, 211, 0.1);
+}
+
+/* Show Check Icon */
+.plan_card input:checked + .card_content .check_circle {
+  opacity: 1;
+  transform: scale(1);
+}
+.list_content h6 {
+    color: #4065D3;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0;
+}
+.list_content p {
+    color: #141414;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+.testimonials-carousel .swiper-slide .review_box {
+  border-radius: 10.808px;
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+  padding: 14px 24px 24px;
+  height: 315px;
+  display: grid;
+  align-content: space-between;
+}
+
+.testimonials-carousel .swiper-slide .review_box p {
+  color: var(--primary-blue);
+  font-size: var(--fs-body);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 24px 0px;
+}
+
+.testimonials-carousel .swiper-slide .review_box h4 {
+  color: var(--primary-blue);
+  font-size: 16.012px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.testimonials-carousel .reviews_logo {
+  width: 596px;
+  margin: 36px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+
+
 
 
 
@@ -544,6 +722,29 @@ div#home-step p {
 .check_list {
     display: block !important;
 }
+
+
+
+
+.testimonials-carousel .reviews_logo {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px !important;
+    width: 100%;
+  }
+
+  .testimonials-carousel .reviews_logo .logo {
+    text-align: center;
+  }
+
+  .testimonials-carousel .swiper-slide .review_box p {
+    font-size: var(--fs-sm);
+    margin: 21px 0px;
+  }
+  .testimonials-carousel .testimonial_section_content p {
+    font-size: var(--fs-body);
+  }
+
 }
 
 
