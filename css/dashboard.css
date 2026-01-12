@@ -241,11 +241,12 @@ a.nav-link img {
   border-radius: 20px;
   margin-bottom: 32px;
 }
-div#auto-step p {
+.step-form-box p {
     font-size: 20px;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 24px;
+    color: #002564;
 }
 .field .form-select, .field .form-control {
     border-radius: 12px;
@@ -302,14 +303,14 @@ div#home-step p {
   border: 1px solid #4065d3 !important;
   cursor: pointer;
 }
-#group-step p , div#marine-step p {
+#group-step p , div#marine-step p , #auto3-step p {
     color: #140505;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.4;
     margin-bottom: 32px;
 }
-#group-step .disclaimer p  {
+#group-step .disclaimer p , #auto3-step .disclaimer p {
     color: #696969;
     font-size: 14px;
     font-style: italic;
@@ -323,12 +324,62 @@ div#home-step p {
     align-items: end;
     gap: 20px;
 }
-
-
-
-
-
-
+a#back-button-link {
+    padding: 17px 19px;
+    color: #4065D3;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none !important;
+    border-radius: 43px;
+    border: 1px solid rgba(0, 37, 100, 0.10);
+    background: #FAFBFF;
+    display: inline-block;
+}
+.check_list p {
+    color: #140505;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.card-body.p-4 {
+    padding: 24px !important;
+    border-radius: 20px;
+    background: linear-gradient(202deg, #0D3C73 -39.74%, #4271E2 132.39%);
+}
+.card-body h5 {
+    margin-bottom: 24px !important;
+    padding-bottom: 24px;
+    color: #FEFEFE;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+}
+.form-check .form-check-label {
+    color: #000;
+    font-family: Graphik;
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.form-check input#terms-auto3 {
+    width: 24.75px;
+    height: 24.75px;
+    background-color: transparent;
+    border: 1px solid #000;
+    box-shadow: none !important;
+}
+.form-check input#terms-auto3:checked {
+    background-color: #4065D3;
+    border: 1px solid #4065D3;
+}
 
 
 
@@ -389,47 +440,33 @@ div#home-step p {
 }
 .btn-group .btn-outline-secondary:hover {
   background-color: #e9ecef;
-  border-color: var(--toco-blue);
-  color: var(--toco-blue);
+  border-color: #4065D3;
+  color: #4065D3;
 }
 
 .btn-group .btn-primary {
-  background-color: var(--toco-blue);
-  border-color: var(--toco-blue);
+  background-color: #4065D3;
+  border-color: #4065D3;
   color: white;
 }
 
 /* When buttons are selected/unselected */
 .btn-group .btn:not(.selected) {
-  background-color: #f8f9fa;
-  border-color: #e9ecef;
-  color: var(--toco-blue);
+    border-color: #e9ecef;
+    color: #4065D3;
+    background: #F2F2F2;
 }
 
 .btn-group .btn.selected {
-  background-color: var(--toco-blue);
-  border-color: var(--toco-blue);
+  background-color: #4065D3 ;
+  border-color: #4065D3;
   color: white;
 }
 div#auto2-image {
   width: 100%;
 }
-.card-body.p-4 {
-  background: linear-gradient(196deg, #0d3c73 0%, #4271e2 100%);
-  border-radius: 20px;
-  padding: 24px !important;
-}
-.card-body h5 {
-  font-size: 24px;
-  margin-bottom: 28px !important;
-  padding-bottom: 24px;
-}
-a#back-button-link {
-  background: #fafbff;
-  padding: 14px 25px;
-  border: 1px solid #e1e6ef;
-  border-radius: 43px;
-}
+
+
 p.zipcode {
   font-size: 13px;
   font-style: normal;
@@ -499,6 +536,13 @@ div#home-step p {
 .input_group button.btn {
     width: 100% !important;
     margin-top: 20px;
+}
+
+.btn-group {
+    margin: 20px 0px 0px;
+}
+.check_list {
+    display: block !important;
 }
 }
 

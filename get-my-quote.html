@@ -22,7 +22,7 @@
                 
                 <!-- Back Button (only shows in substeps) -->
                 <div id="back-button-container" style="display: none;">
-                    <a href="#" id="back-button-link" class="text-decoration-none mb-3 d-inline-block" style="color: var(--toco-blue); font-size: 14px;">
+                    <a href="#" id="back-button-link">
                         <i class="bi bi-arrow-left me-1"></i> <span id="back-button-text">Back</span>
                     </a>
                 </div>
@@ -152,26 +152,26 @@
                             
                             <!-- Auto Step 2: Vehicle Questions -->
                             <div id="auto2-step" class="step-content">
-                                <h2 class="" style="color: #002564; font-weight: 600; font-size: 40px; margin-bottom: 32px;">Great! We just need to know a few more details for your quote.</h2>
+                                <h2  id="page-title">Great! We just need to know a few more details for your quote.</h2>
                                 <div class="step-form-box">
-                                <div class="mb-4 d-flex justify-content-between align-items-center">
-                                    <p class="mb-0" style="font-weight: 500; color: #212529;">Is your vehicle used for commercial purposes?</p>
+                                <div class="mb-4 d-flex justify-content-between align-items-center check_list">
+                                    <p class="mb-0">Is your vehicle used for commercial purposes?</p>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn">Yes</button>
                                         <button type="button" class="btn selected">No</button>
                                     </div>
                                 </div>
                                 
-                                <div class="mb-4 d-flex justify-content-between align-items-center">
-                                    <p class="mb-0" style="font-weight: 500; color: #212529;">Is your vehicle used for Ridesharing?</p>
+                                <div class="mb-4 d-flex justify-content-between align-items-center check_list">
+                                    <p class="mb-0">Is your vehicle used for Ridesharing?</p>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn">Yes</button>
                                         <button type="button" class="btn selected">No</button>
                                     </div>
                                 </div>
                                 
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="mb-0" style="font-weight: 500; color: #212529;">Is your vehicle equipped with a fifth wheel or gooseneck trailer for towing?</p>
+                                <div class="d-flex justify-content-between align-items-center check_list">
+                                    <p class="mb-0">Is your vehicle equipped with a fifth wheel or gooseneck trailer for towing?</p>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn">Yes</button>
                                         <button type="button" class="btn selected">No</button>
@@ -179,9 +179,11 @@
                                 </div>
                                 </div>
                                 <div class="step-form-box">
-                                <h5 class="pb-0 mileage-card" style="color: var(--toco-navy); font-weight: 600;">Mileage</h5>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="mb-0" style="font-weight: 600; color: #212529;">Has your odometer stopped working or been altered in any way?</p>
+                                <p>
+                                    Mileage
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center check_list">
+                                    <p class="mb-0">Has your odometer stopped working or been altered in any way?</p>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn">Yes</button>
                                         <button type="button" class="btn selected">No</button>
@@ -190,25 +192,27 @@
                                 </div>
 
                                 <div class="step-form-box">
-                                <h5 class="pb-0" style="color: var(--toco-navy); font-weight: 600;">Additional Details</h5>
-                                <div class="mb-4 d-flex justify-content-between align-items-center">
-                                    <p class="mb-0" style="font-weight: 600; color: #212529;">Does your vehicle have a mobility package?</p>
+                                <p>
+                                    Additional Details
+                                </p>
+                                <div class="mb-4 d-flex justify-content-between align-items-center check_list">
+                                    <p class="mb-0">Does your vehicle have a mobility package?</p>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn">Yes</button>
                                         <button type="button" class="btn selected">No</button>
                                     </div>
                                 </div>
                                 
-                                <div class="mb-4 d-flex justify-content-between align-items-center">
-                                    <p class="mb-0" style="font-weight: 600; color: #212529;">Does your vehicle have any modifications or a lift kit?</p>
+                                <div class="mb-4 d-flex justify-content-between align-items-center check_list">
+                                    <p class="mb-0">Does your vehicle have any modifications or a lift kit?</p>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn">Yes</button>
                                         <button type="button" class="btn selected">No</button>
                                     </div>
                                 </div>
                                 
-                                <div class=" d-flex justify-content-between align-items-center">
-                                    <p class="mb-0" style="font-weight: 600; color: #212529;">Has your vehicle ever been a total loss, salvaged, rebuilt, grey market or similarly title vehicle?</p>
+                                <div class=" d-flex justify-content-between align-items-center check_list">
+                                    <p class="mb-0">Has your vehicle ever been a total loss, salvaged, rebuilt, grey market or similarly title vehicle?</p>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn">Yes</button>
                                         <button type="button" class="btn selected">No</button>
@@ -219,50 +223,68 @@
 
 
                                 
-                                <div class="mt-5 step-form-box">
-                                    <h5 class="mb-3 pb-0" style="color: var(--toco-navy); font-weight: 600;">Do you know your VIN number?</h5>
-                                    <input type="text" class="form-control mb-2" placeholder="VIN Number" style="max-width: 100%;">
+                                <div class="mb-0 step-form-box">
+                                    <p>
+                                        Do you know your VIN number?
+                                    </p>
+                                    <div class="field">
+                                        <input type="text" class="form-control mb-3" placeholder="VIN Number" style="max-width: 100%;">
                                     <p class="text-muted zipcode" style="font-size: 13px;">Your VIN is not needed for an estimated quote, but is needed to complete your enrollment.</p>
+                                    </div>
                                 </div>
                             </div>
                             
                             <!-- Auto Step 3: Personal Information -->
                             <div id="auto3-step" class="step-content">
-                                <h2 class="mb-3" style="color: #212529; font-weight: 700;">We're almost there—let's get your Cadillac Catera covered!</h2>
-                                <p class="mb-4" style="color: #495057;">See what's included and get protected today. Drive with peace of mind while we handle the costly repairs — saving you thousands on unexpected bills.</p>
+                                <h2 id="page-title">We're almost there—let's get your Cadillac Catera covered!</h2>
+                                
+                                  <p>
+                                    See what’s included and get protected today. Drive with peace of mind while we handle the costly repairs — saving you thousands on unexpected bills.
+                                </p>
                                 
                                 <form>
-                                    <div class="row mb-3">
+                                    <div class="step-form-box">
+                                        <div class="row mb-3">
                                         <div class="col-md-6">
-                                            <label class="form-label">First Name</label>
-                                            <input type="text" class="form-control" placeholder="John">
+                                            <div class="field">
+                                                <label class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" placeholder="John Smith">
+                                            </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label">Last Name</label>
-                                            <input type="text" class="form-control" placeholder="Smith">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row mb-3">
-                                        <div class="col-md-6">
-                                            <label class="form-label">Phone Number</label>
-                                            <input type="tel" class="form-control" placeholder="+1 (555) 123-4567">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form-label">Email Address</label>
-                                            <input type="email" class="form-control" placeholder="your@email.com">
+                                            <div class="field">
+                                                <label class="form-label">Company Name</label>
+                                                <input type="text" class="form-control" placeholder="Company Name">
+                                            </div>
                                         </div>
                                     </div>
                                     
-                                    <div class="disclaimer mb-4">
-                                        <p class="mb-2">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label class="form-label">Email Address</label>
+                                                <input type="email" class="form-control" placeholder="name@company.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label class="form-label">Phone Number</label>
+                                                <input type="tel" class="form-control" placeholder="+1 (555) 123-4567">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="disclaimer">
+                                        <p>
                                             *Toco will never use your information to place robocalls to you for any reason. We will handle your personal information with the highest level of confidentiality. We will only contact you to provide the information you requested, with no pressure or obligation.
-                                        </p>
-                                        <p class="mb-0">
-                                            <strong>Legal Disclaimer:</strong> By clicking this link you are authorizing Toco to contact you by email, phone or text. If you purchase a plan from us, you are also authorizing us to contact you in conjunction with the normal course of administering your plan and/or for customer service requests with no automated calls. No Do Not Call registrations. You are not required to agree to this as a condition of purchase.
+                                            <br><br>
+                                           <span style="font-weight: 500;"> Legal Disclaimer: </span> By clicking this link you are authorizing Toco to contact you by email, phone or text. If you purchase a plan from us, you are also authorizing us to contact you in conjunction with the normal course of administering your plan and Toco's products and services. This permission supersedes all Do Not Call registrations. You are not required to agree to this as a condition of purchase.
                                         </p>
                                     </div>
                                 </form>
+
                             </div>
                             
                             <!-- Auto Step 4: Quote Ready -->
@@ -873,16 +895,16 @@
                             
                             <!-- Auto 2-6 Vehicle Summary Cards -->
                             <div id="auto2-image" class="step-image">
-                                <div class="card mb-3" style="color: white; border-radius: 16px; max-width: 100%;">
+                                <div class="card mb-4" style="color: white; border-radius: 16px; max-width: 100%;">
                                     <div class="card-body p-4">
                                         <h5 class="" style="font-weight: 600; border-bottom: 1px solid #AEAEAE;">Cadillac Catera</h5>
                                         <div class="d-flex justify-content-between mb-3">
                                             <span class="card-year">Year</span>
-                                            <strong class="card-number">2019</strong>
+                                            <strong class="card-number" style="font-size: 18px;">2019</strong>
                                         </div>
                                         <div class="d-flex justify-content-between">
                                             <span class="card-year">Mileage</span>
-                                            <strong class="card-number">50,001-75,000</strong>
+                                            <strong class="card-number" style="font-size: 18px;">50,001-75,000</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -892,27 +914,27 @@
                                 </button>
                             </div>
                             
-                            <div id="auto3-image" class="step-image">
-                                <div class="card mb-3" style="background: linear-gradient(135deg, var(--toco-blue) 0%, #4a6ae8 100%); color: white; border-radius: 16px; max-width: 280px;">
+                            <div id="auto3-image" class="step-image w-100">
+                                <div class="card mb-4" style="color: white; border-radius: 16px; max-width: 100%;">
                                     <div class="card-body p-4">
-                                        <h5 class="mb-3" style="font-weight: 700;">Cadillac Catera</h5>
-                                        <div class="d-flex justify-content-between mb-2">
-                                            <span>Year</span>
-                                            <strong>2019</strong>
+                                        <h5 class="" style="font-weight: 600; border-bottom: 1px solid #AEAEAE;">Cadillac Catera</h5>
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <span class="card-year">Year</span>
+                                            <strong class="card-number" style="font-size: 18px;">2019</strong>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <span>Mileage</span>
-                                            <strong>50,001-75,000</strong>
+                                            <span class="card-year">Mileage</span>
+                                            <strong class="card-number" style="font-size: 18px;">50,001-75,000</strong>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-check mb-3" style="max-width: 280px;">
+                                <div class="form-check mb-4">
                                     <input class="form-check-input" type="checkbox" id="terms-auto3">
-                                    <label class="form-check-label" for="terms-auto3" style="font-size: 13px;">
-                                        To proceed, please accept the <a href="#" style="color: var(--toco-blue);">Terms & Conditions.</a>
+                                    <label class="form-check-label" for="terms-auto3">
+                                        To proceed, please accept the <a href="#" style="color: #4065D3">Terms & Conditions.</a>
                                     </label>
                                 </div>
-                                <button type="button" class="btn btn-primary btn-lg rounded-pill w-100" onclick="showAutoStep('auto4')" style="max-width: 280px;">
+                                <button type="button" class="btn btn-primary btn-lg rounded-pill w-100" onclick="showAutoStep('auto4')">
                                     See my quote
                                     <i class="bi bi-arrow-right ms-2"></i>
                                 </button>
