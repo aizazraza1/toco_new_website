@@ -193,6 +193,13 @@ h2#page-title {
 a.nav-link img {
   width: 30px;
 }
+button.btn-close {
+    border-radius: 9999px;
+    background-color: rgba(0, 37, 100, 0.05);
+    width: 48px;
+    height: 48px;
+    box-shadow: none !important;
+}
 .nav-pills .nav-link {
   border: 2px solid #e1e6ef;
   border-radius: 20px;
@@ -671,7 +678,11 @@ a.personalized-btn {
 .step-content.active {
   display: block;
 }
-
+.step-image {
+    position: sticky !important;
+    position: -webkit-sticky;
+    top: 30px;
+}
 .step-image {
   display: none;
 }
@@ -832,6 +843,20 @@ div#home-step p {
     font-size: var(--fs-body);
   }
 
+  .review-logo {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px !important;
+    width: 100%;
+}
+  .review-logo img {
+    width: auto !important;
+    height: 55.244px !important;
+}
+.btn-close {
+    top: 17px;
+    right: 14px;
+}
 }
 
 
